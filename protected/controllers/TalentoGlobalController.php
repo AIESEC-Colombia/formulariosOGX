@@ -75,7 +75,7 @@ class TalentoGlobalController extends Controller
 
 		// Save the new item
 		$item->save();
-		$idColombia=1551;
+		/*$idColombia=1551;
 		$nameColombia="COLOMBIA";
 		$curl = curl_init();
 		// Set some options - we are passing in a useragent too here
