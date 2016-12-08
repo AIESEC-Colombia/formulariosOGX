@@ -10,6 +10,7 @@
                  }
       html{
         font-family: "Lato-Light";
+        background-color: white;
       }
       body{
         background-color: white;
