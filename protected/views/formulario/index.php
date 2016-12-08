@@ -11,6 +11,9 @@
       html{
         font-family: "Lato-Light";
       }
+      body{
+        background-color: white;
+      }
     </style>
   </head>
   <body>
