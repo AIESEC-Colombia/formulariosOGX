@@ -48,6 +48,7 @@ class TalentoGlobalController extends Controller
 	}
 
 	public function actionInserExpa(){
+		
 		$Json= $_POST['parametros'];
 		$app_id=17376671;
 		$app_token="35dcfb3e684f414f9cd2de1b2cb97115";
@@ -75,7 +76,7 @@ class TalentoGlobalController extends Controller
 
 		// Save the new item
 		$item->save();
-		/*$idColombia=1551;
+		$idColombia=1551;
 		$nameColombia="COLOMBIA";
 		$curl = curl_init();
 		// Set some options - we are passing in a useragent too here
@@ -149,6 +150,7 @@ class TalentoGlobalController extends Controller
 
 	    //echo json_encode($matches);
 	    echo  json_encode($result)  ;
+
 
 	}
 
