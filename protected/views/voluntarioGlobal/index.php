@@ -21,7 +21,7 @@
   <div class="container">
     
       <div class="col s12 m7">
-        <h2 class="header" id="title" style="background-color: '#30c39e'">Voluntario Global</h2>
+        <h2 class="header" id="title" style="background-color: '#f85a40'">Voluntario Global</h2>
       </div>
       <div class="col s12 m12">
        Gracias por visitiar nuestro programa de Voluntario Global, con este formulario se registrara en nuestra plataforma de oportunidades sin compromiso. Luego de completar su registro nos pondremos en contacto para asesorarlo en su búsqueda y resolución de inquietudes.
@@ -88,7 +88,7 @@
      </div>
 
     <div class="input-field col s12">
-    <a class="waves-effect waves-light btn" id=btnIngresar style="background-color: '#30c39e'">Registrarse</a>
+    <a class="waves-effect waves-light btn" id=btnIngresar style="background-color: '#f85a40'">Registrarse</a>
     </div>
   
   </div>
@@ -101,13 +101,13 @@
         color: #5d5d5d;
       }
       #btnIngresar{
-        background-color: #30c39e; 
+        background-color: #f85a40; 
       }
       #title{
-        color: #30c39e; 
+        color: #f85a40; 
       }
       .material-icons{
-        color: #30c39e; 
+        color: #f85a40; 
       }
     </style>
    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/voluntarioGlobal.js"></script>

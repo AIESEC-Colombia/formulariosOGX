@@ -21,7 +21,7 @@
   <div class="container">
     
       <div class="col s12 m7">
-        <h2 class="header" id="title" style="background-color: '#30c39e'">Emprendedor global</h2>
+        <h2 class="header" id="title" style="background-color: '#30c39e'">Emprendedor Global</h2>
       </div>
       <div class="col s12 m12">
        Gracias por visitiar nuestro programa de Emprendedor Global, con este formulario se registrara en nuestra plataforma de oportunidades sin compromiso. Luego de completar su registro nos pondremos en contacto para asesorarlo en su búsqueda y resolución de inquietudes.

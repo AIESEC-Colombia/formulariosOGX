@@ -21,7 +21,7 @@
   <div class="container">
     
       <div class="col s12 m7">
-        <h2 class="header" id="title" style="background-color: '#30c39e'">Talento Global</h2>
+        <h2 class="header" id="title" style="background-color: '#0a8eA0'">Talento Global</h2>
       </div>
       <div class="col s12 m12">
        Gracias por visitiar nuestro programa de talento Global, con este formulario se registrara en nuestra plataforma de oportunidades sin compromiso. Luego de completar su registro nos pondremos en contacto para asesorarlo en su búsqueda y resolución de inquietudes.
@@ -94,7 +94,7 @@
      </div>
 
     <div class="input-field col s12">
-    <a class="waves-effect waves-light btn" id=btnIngresar style="background-color: '#30c39e'">Registrarse</a>
+    <a class="waves-effect waves-light btn" id=btnIngresar style="background-color: '#0a8eA0'">Registrarse</a>
     </div>
   
   </div>
@@ -107,13 +107,13 @@
         color: #5d5d5d;
       }
       #btnIngresar{
-        background-color: #30c39e; 
+        background-color: #0a8eA0; 
       }
       #title{
-        color: #30c39e; 
+        color: #0a8eA0; 
       }
       .material-icons{
-        color: #30c39e; 
+        color: #0a8eA0; 
       }
     </style>
    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/talentoGlobal.js"></script>
