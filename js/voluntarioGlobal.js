@@ -110,12 +110,8 @@
                 });
     		$("#btnIngresar").click(function(){
                 var universidadNombre;
-                $.each(JsonUniversidades, function(vindex,value){
-                    
-                    if(value.id==$("#lstUniversidad").val()){
-                        universidadNombre=value.value;
-                    }
-                });
+                lstU= document.getElementById("lstUniversidad");
+                universidadNombre=lstU.options[lst.selectedIndex].innerHTML;
                 
     			if(Validar() && ValidarClave($("#txtPassword").val())){
                     var url="index.php?r=voluntarioGlobal/InserExpa";

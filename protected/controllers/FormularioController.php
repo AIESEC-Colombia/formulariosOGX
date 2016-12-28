@@ -52,9 +52,11 @@ class FormularioController extends Controller
 		$app_id=17129818;
 		$app_token="036c4cdb360d488fbcdbc44174f93572";
 		Yii::import("application.extensions.podio.PodioAPI", true);
+		
 		Podio::setup("developerupb-lecr99", "ewH2NOFno2Aucnrxx7KcKmFUGrhQ5IBNJYnrHA3442j7IKf9wkQyl7EULzsfIC8g");
 		Podio::authenticate_with_app($app_id, $app_token);
-	
+		$objCo2mite=Comite();
+		$idListComite=$objComite->getValorPodio((int)$Json['valUniversidad']);
 
 		$fields = new PodioItemFieldCollection(array(
 		  new PodioTextItemField(array("external_id" => "titulo", "values" => $Json['txtFirstName'] )),
