@@ -114,7 +114,7 @@
     		$("#btnIngresar").click(function(){
                 var universidadNombre;
                 lstU= document.getElementById("lstUniversidad");
-                universidadNombre=lstU.options[lst.selectedIndex].innerHTML;
+                universidadNombre=lstU.options[lstU.selectedIndex].innerHTML;
                 
     			if(Validar() && ValidarClave($("#txtPassword").val())){
                     var url="index.php?r=talentoGlobal/InserExpa";
