@@ -49,11 +49,13 @@ class VoluntarioGlobalController extends Controller
 
 	public function actionInserExpa(){
 		$Json= $_POST['parametros'];
-		$app_id=17379862;
-		$app_token="1723b96a6f9e43cd82b470f7f6ab1dc2";
+		$app_id=17804072;
+		$app_token="e02cf323e22c4c1facfca747d610cff4";
 		Yii::import("application.extensions.podio.PodioAPI", true);
+		Yii::import("application.extensions.Utilidades.Comite.php", true);
 		Podio::setup("developerupb-lecr99", "ewH2NOFno2Aucnrxx7KcKmFUGrhQ5IBNJYnrHA3442j7IKf9wkQyl7EULzsfIC8g");
 		Podio::authenticate_with_app($app_id, $app_token);
+		$Comite=new Comite();
 	
 
 		$fields = new PodioItemFieldCollection(array(
@@ -64,7 +66,8 @@ class VoluntarioGlobalController extends Controller
 		  new PodioCategoryItemField(array("external_id" => "email-2", "values" => $Json['txtmail'])),
 		  new PodioCategoryItemField(array("external_id" => "iduniversity", "values" => $Json['valUniversidad'])),
 		  new PodioCategoryItemField(array("external_id" => "university", "values" => $Json['nombreUniversidad'])),
-		  new PodioCategoryItemField(array("external_id" => "howmet-2", "values" => (int) $Json['lstConocioOrganizacion']))
+		  new PodioCategoryItemField(array("external_id" => "howmet-2", "values" => (int) $Json['lstConocioOrganizacion'])),
+		  new PodioCategoryItemField(array("external_id" => "lc", "values" => $Comite->getValorPodio((int) $Json['valUniversidad'])))
 		  ));
 
 		$item = new PodioItem(array(
