@@ -67,6 +67,8 @@ class TalentoGlobalController extends Controller
 		  new PodioCategoryItemField(array("external_id" => "university", "values" => $Json['nombreUniversidad'])),
 		  new PodioCategoryItemField(array("external_id" => "howmet-2", "values" => (int)$Json['lstConocioOrganizacion'])),
 		  new PodioCategoryItemField(array("external_id" => "worksfield", "values" => $Json['lstCampos']))
+		  ,
+			  new PodioCategoryItemField(array("external_id" => "lc", "values" => $Comite->getValorPodio((int) $Json['valUniversidad'])))
 		  ));
 
 		$item = new PodioItem(array(
