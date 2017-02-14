@@ -128,7 +128,7 @@
                     data["lstConocioOrganizacion"]=$("#lstConocioOrganizacion").val();
                    
                     
-    				ajax.ajaxSinJson(data,url,saveEndAjax);
+    				ajax.ajaxSinJson(data,url,saveEndAjax,errorEnd);
                     $.blockUI({ 
                         message: $(' <div class="progress"><div class="indeterminate"></div></div>'), 
                         css: { top: '20%' } 
@@ -143,6 +143,10 @@
 
 
     	};
+
+        var errorEnd=function(error){
+            console.log(error);
+        }
 
         $(document).ready(start);
     }
