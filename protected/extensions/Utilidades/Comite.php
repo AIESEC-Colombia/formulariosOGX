@@ -41,7 +41,7 @@
 		);
 
 		public function getValorPodio($idComite){
-			return $lstComites[$idComite]["ValorPodio"];
+			return $this->$lstComites[$idComite]["ValorPodio"];
 		}
 	}
  ?>
