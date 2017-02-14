@@ -1,5 +1,5 @@
 <?php 
-	public class Comite{
+	 class Comite{
 		var $lstComites=array( 
 		1395 => array('Comite' => "ANDES", 'ValorPodio'=> 1),
 		2052 => array('Comite' => "APC", 'ValorPodio'=> 2),
