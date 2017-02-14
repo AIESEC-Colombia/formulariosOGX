@@ -48,6 +48,7 @@ class FormularioController extends Controller
 	}
 
 	public function actionInserExpa(){
+		try {
 		$Json= $_POST['parametros'];
 		$app_id=17129818;
 		$app_token="036c4cdb360d488fbcdbc44174f93572";
@@ -152,6 +153,12 @@ class FormularioController extends Controller
 
 	    //echo json_encode($matches);
 	    echo  json_encode($result)  ;
+	    }catch (Exception $e) {
+		    echo json_encode( array(
+			    "result" => false,
+			    "message" => $e->getMessage(),
+				));
+		}
 
 	}
 
