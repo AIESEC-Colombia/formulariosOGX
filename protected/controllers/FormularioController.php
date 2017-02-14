@@ -56,8 +56,8 @@ class FormularioController extends Controller
 		Yii::import("application.extensions.Utilidades.Comite", true);
 		Podio::setup("developerupb-lecr99", "ewH2NOFno2Aucnrxx7KcKmFUGrhQ5IBNJYnrHA3442j7IKf9wkQyl7EULzsfIC8g");
 		Podio::authenticate_with_app($app_id, $app_token);
-		$objCo2mite=Comite();
-		$idListComite=$objComite->getValorPodio((int)$Json['valUniversidad']);
+		$Comite=new Comite();
+		
 
 		$fields = new PodioItemFieldCollection(array(
 		  new PodioTextItemField(array("external_id" => "titulo", "values" => $Json['txtFirstName'] )),
