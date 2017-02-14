@@ -23,7 +23,7 @@ define(["js/clases/objetos"
             },
             /*Error del ajax*/
             _Error: function (objeto, quepaso, otroobj) {
-               console.log(quepaso);
+               console.log(objeto);
                 if (Objetos.isNoNullorEmpty(this.objThis._AjaxError)) {
                     this.objThis._AjaxError(quepaso);
                 }
