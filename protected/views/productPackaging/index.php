@@ -52,7 +52,7 @@
         <label for="email">Email*</label> 
       </div>
       <div class="input-field col s12">
-        <i class="material-icons prefix" >email</i>
+        <i class="material-icons prefix" >account_balance</i>
          <select class="listas" id="lstUniversidad">
            <option value="" disabled selected>Seleccione una universidad</option>             
          </select>
@@ -69,7 +69,7 @@
         <label for="txtSecondPassword">Repita la Clave*</label>
       </div>
       <div class="input-field col s12">
-        <i class="material-icons prefix">email</i>
+        <i class="material-icons prefix">business</i>
          <select class="listas" id="lstConocioOrganizacion">
            <option value="" disabled selected>Como conoci a la organización</option>
            <option value="1">Universidad</option>
