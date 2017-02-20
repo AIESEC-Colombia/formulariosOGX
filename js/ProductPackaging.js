@@ -85,7 +85,7 @@
     	}
 
         var saveEndAjax=function(data){
-        	console.log(data);
+
             window.open("https://auth.aiesec.org/users/sign_in");
             swal({
               title: "Registro correcto!",
@@ -97,7 +97,7 @@
               closeOnConfirm: false
             },
             function(){
-               //location.reload();
+               location.reload();
             });
 
         }

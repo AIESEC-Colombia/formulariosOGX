@@ -177,6 +177,6 @@ class ProductPackagingController extends Controller
 				break;
 			}
 		}
-		echo json_encode($colombia);
+		echo json_encode($result);
 	}
 }
