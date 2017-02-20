@@ -83,7 +83,7 @@
      </div>
 
      <div class="input-field col s12">
-        <i class="material-icons prefix">event note</i>
+        <i class="material-icons prefix">event</i>
          <select class="listas" id="lstEntereConvocatoria">
            <option value="" disabled selected>Como me entere</option>
            <option value="1">Universidad</option>
