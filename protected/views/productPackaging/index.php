@@ -175,6 +175,6 @@
         color: #f85a40; 
       }
     </style>
-   <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/voluntarioGlobal.js"></script>
+   <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/ProductPackaging.js"></script>
   </body>
 </html>
