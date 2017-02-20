@@ -72,7 +72,7 @@ class ProductPackagingController extends Controller
 			  new PodioCategoryItemField(array("external_id" => "entero-convocatoria", "values" => (int) $Json['lstEntereConvocatoria'])),
 			   new PodioCategoryItemField(array("external_id" => "primer-pais", "values" => (int) $Json['lstPaisPreferencia'])),
 			
-			  new PodioCategoryItemField(array("external_id" => "		segundo-pais", "values" => (int) $Json['lstPaisPreferenciaSegunda'])),
+			  new PodioCategoryItemField(array("external_id" => "segundo-pais", "values" => (int) $Json['lstPaisPreferenciaSegunda'])),
 			 
 			new PodioCategoryItemField(array("external_id" => "categoria", "values" => (int) $Json['lstOds']))
 			  ));
