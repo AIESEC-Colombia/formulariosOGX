@@ -125,10 +125,24 @@
         <i class="material-icons prefix">email</i>
          <select class="listas" id="lstOds">
           <option value="" disabled selected>ODS</option>
-           <option value="1">Brasil</option>
-           <option value="2">Argentina</option>
-           <option value="3">Perú</option>
-           <option value="4">México</option>           
+           <option value="1">Poner fin a la ​pobreza​ en todas sus formas en todo el mundo</option>
+           <option value="2">Poner fin al hambre, lograr la ​seguridad alimentaria​ y la mejora de la nutrición​ y promover la ​agricultura sostenible</option>
+           <option value="3">Garantizar una ​vida sana​ y promover el bienestar para todos en todas las edades</option>
+           <option value="4">Garantizar una ​educación inclusiva​, equitativa y de calidad y promover oportunidades de ​aprendizaje durante toda la vida​ para todos</option>  
+           <option value="5">Lograr la ​igualdad entre los géneros​ y empoderar a todas las mujeres y las niñas</option>  
+           <option value="6">Garantizar la disponibilidad de ​agua​ y su gestión sostenible y el saneamiento para todos</option>  
+           <option value="7">Garantizar el acceso a una ​energía​ asequible, segura, sostenible y moderna para todos</option>  
+           <option value="8">Promover el crecimiento económico sostenido, inclusivo y sostenible, el ​empleo pleno​ y productivo y el ​trabajo decente​ para todos</option>  
+           <option value="9">Construir ​infraestructuras​ resilientes, promover la ​industrialización inclusiva y sostenible y fomentar la ​innovación</option>  
+           <option value="10">Reducir la desigualdad en y entre los países</option>  
+           <option value="11">Lograr que las ciudades y los asentamientos humanos sean inclusivos, seguros, resilientes y sostenibles</option>  
+           <option value="12">Garantizar modalidades de consumo y producción sostenibles</option> 
+           <option value="13">Adoptar medidas urgentes para combatir el ​cambio climático​ y sus efectos</option> 
+           <option value="14">Conservar y utilizar en forma sostenible los ​océanos​, los mares y los recursos marinos para el desarrollo sostenible</option> 
+           <option value="15">Proteger, restablecer y promover el uso sostenible de los ecosistemas​ terrestres, gestionar los bosques de forma sostenible, luchar contra la ​desertificación​, detener e invertir la degradación de las tierras y poner freno a la pérdida de la ​diversidad biológica</option> 
+           <option value="16">Promover sociedades ​pacíficas​ e inclusivas para el desarrollo sostenible, facilitar el acceso a la justicia para todos y crear instituciones eficaces, responsables e inclusivas a todos los niveles</option>  
+           <option value="17">Fortalecer los medios de ejecución y revitalizar la Alianza Mundial para el Desarrollo Sostenible</option>  
+           
          </select>
          <label>ODS</label>
      </div>
