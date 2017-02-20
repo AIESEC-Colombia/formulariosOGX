@@ -50,8 +50,8 @@ class ProductPackagingController extends Controller
 	public function actionInserExpa(){
 		try {
 			$Json= $_POST['parametros'];
-			$app_id=17379862;
-			$app_token="1723b96a6f9e43cd82b470f7f6ab1dc2";
+			$app_id=17897224;
+			$app_token="5d5b72f9e91c460da0b35559a311e046";
 			Yii::import("application.extensions.podio.PodioAPI", true);
 			Yii::import("application.extensions.Utilidades.Comite", true);
 			Podio::setup("developerupb-lecr99", "ewH2NOFno2Aucnrxx7KcKmFUGrhQ5IBNJYnrHA3442j7IKf9wkQyl7EULzsfIC8g");
@@ -69,6 +69,12 @@ class ProductPackagingController extends Controller
 			  new PodioCategoryItemField(array("external_id" => "university", "values" => $Json['nombreUniversidad'])),
 			  new PodioCategoryItemField(array("external_id" => "howmet-2", "values" => (int) $Json['lstConocioOrganizacion'])),
 			  new PodioCategoryItemField(array("external_id" => "lc", "values" => $Comite->getValorPodio((int) $Json['valUniversidad'])))
+			  new PodioCategoryItemField(array("external_id" => "entero-convocatoria", "values" => (int) $Json['lstEntereConvocatoria'])),
+			   new PodioCategoryItemField(array("external_id" => "primer-pais", "values" => (int) $Json['lstPaisPreferencia'])),
+			  )),
+			  new PodioCategoryItemField(array("external_id" => "		segundo-pais", "values" => (int) $Json['lstPaisPreferenciaSegunda'])),
+			  )),
+			new PodioCategoryItemField(array("external_id" => "categoria", "values" => (int) $Json['lstOds'])),
 			  ));
 
 			$item = new PodioItem(array(

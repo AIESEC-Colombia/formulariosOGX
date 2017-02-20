@@ -83,7 +83,7 @@
      </div>
 
      <div class="input-field col s12">
-        <i class="material-icons prefix">email</i>
+        <i class="material-icons prefix">event note</i>
          <select class="listas" id="lstEntereConvocatoria">
            <option value="" disabled selected>Como me entere</option>
            <option value="1">Universidad</option>
@@ -97,7 +97,7 @@
      </div>
 
      <div class="input-field col s12">
-        <i class="material-icons prefix">email</i>
+        <i class="material-icons prefix">person pin circle</i>
          <select class="listas" id="lstPaisPreferencia">
          <option value="" disabled selected>País de preferencia</option>
            <option value="1">Brasil</option>
@@ -110,7 +110,7 @@
 
 
      <div class="input-field col s12">
-        <i class="material-icons prefix">email</i>
+        <i class="material-icons prefix">person pin circle</i>
          <select class="listas" id="lstPaisPreferenciaSegunda">
           <option value="" disabled selected>Segunda preferencia</option>
            <option value="1">Brasil</option>
@@ -122,7 +122,7 @@
      </div>
 
      <div class="input-field col s12">
-        <i class="material-icons prefix">email</i>
+        <i class="material-icons prefix">directions run</i>
          <select class="listas" id="lstOds">
           <option value="" disabled selected>ODS</option>
            <option value="1">Poner fin a la ​pobreza​ en todas sus formas en todo el mundo</option>
