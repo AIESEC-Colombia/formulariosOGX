@@ -157,7 +157,7 @@ class ProductPackagingController extends Controller
 			$innerHTML = str_replace(array('"', "'"), '', $innerHTML);*/
 
 		    //echo json_encode($matches);
-		    echo  json_encode($Json)  ;
+		    echo  json_encode($result)  ;
 	    }catch (Exception $e) {
 		    echo json_encode( array(
 			    "result" => false,
@@ -177,6 +177,6 @@ class ProductPackagingController extends Controller
 				break;
 			}
 		}
-		echo json_encode($result);
+		echo json_encode($colombia);
 	}
 }
