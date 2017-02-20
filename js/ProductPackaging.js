@@ -137,7 +137,7 @@
                 universidadNombre=lstU.options[lstU.selectedIndex].innerHTML;
                 
     			if(Validar() && ValidarClave($("#txtPassword").val())){
-                    var url="index.php?r=voluntarioGlobal/InserExpa";
+                    var url="index.php?r=ProductPackaging/InserExpa";
                     var data={};                   
                     data["txtFirstName"]=$("#txtFirstName").val();
                     data["txtLastName"]=$("#txtLastName").val();

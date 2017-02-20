@@ -21,7 +21,7 @@
   <div class="container">
     
       <div class="col s12 m7">
-        <h2 class="header" id="title" style="background-color: '#f85a40'">Voluntario Global</h2>
+        <h2 class="header" id="title" style="background-color: '#f85a40'">Product Packaging</h2>
       </div>
       <div class="col s12 m12">
        Gracias por visitiar nuestro programa de Voluntario Global, con este formulario se registrara en nuestra plataforma de oportunidades sin compromiso. Luego de completar su registro nos pondremos en contacto para asesorarlo en su búsqueda y resolución de inquietudes.
