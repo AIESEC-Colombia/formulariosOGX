@@ -85,6 +85,7 @@
     	}
 
         var saveEndAjax=function(data){
+        	console.log(data);
             window.open("https://auth.aiesec.org/users/sign_in");
             swal({
               title: "Registro correcto!",
@@ -96,7 +97,7 @@
               closeOnConfirm: false
             },
             function(){
-               location.reload();
+               //location.reload();
             });
 
         }
@@ -166,7 +167,7 @@
                 e.preventDefault();
                 window.open("https://opportunities.aiesec.org/assets/terms.pdf");
             });
-            ajax.ajax({},"index.php?r=voluntarioGlobal/UniversidadesColombia",endLoadList);
+            ajax.ajax({},"index.php?r=ProductPackaging/UniversidadesColombia",endLoadList);
 
 
     	};

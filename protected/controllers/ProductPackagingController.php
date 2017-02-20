@@ -74,7 +74,7 @@ class ProductPackagingController extends Controller
 			
 			  new PodioCategoryItemField(array("external_id" => "		segundo-pais", "values" => (int) $Json['lstPaisPreferenciaSegunda'])),
 			 
-			new PodioCategoryItemField(array("external_id" => "categoria", "values" => (int) $Json['lstOds'])),
+			new PodioCategoryItemField(array("external_id" => "categoria", "values" => (int) $Json['lstOds']))
 			  ));
 
 			$item = new PodioItem(array(
@@ -157,7 +157,7 @@ class ProductPackagingController extends Controller
 			$innerHTML = str_replace(array('"', "'"), '', $innerHTML);*/
 
 		    //echo json_encode($matches);
-		    echo  json_encode($result)  ;
+		    echo  json_encode($Json)  ;
 	    }catch (Exception $e) {
 		    echo json_encode( array(
 			    "result" => false,
