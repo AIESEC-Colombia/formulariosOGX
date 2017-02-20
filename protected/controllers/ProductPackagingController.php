@@ -68,7 +68,7 @@ class ProductPackagingController extends Controller
 			  new PodioCategoryItemField(array("external_id" => "iduniversity", "values" => $Json['valUniversidad'])),
 			  new PodioCategoryItemField(array("external_id" => "university", "values" => $Json['nombreUniversidad'])),
 			  new PodioCategoryItemField(array("external_id" => "howmet-2", "values" => (int) $Json['lstConocioOrganizacion'])),
-			  new PodioCategoryItemField(array("external_id" => "lc", "values" => $Comite->getValorPodio((int) $Json['valUniversidad'])))
+			  new PodioCategoryItemField(array("external_id" => "lc", "values" => $Comite->getValorPodio((int) $Json['valUniversidad']))),
 			  new PodioCategoryItemField(array("external_id" => "entero-convocatoria", "values" => (int) $Json['lstEntereConvocatoria'])),
 			   new PodioCategoryItemField(array("external_id" => "primer-pais", "values" => (int) $Json['lstPaisPreferencia'])),
 			  )),
