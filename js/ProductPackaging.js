@@ -12,7 +12,7 @@
     		var lstUniversidad=$("#lstUniversidad");
     		var txtPassword=$("#txtPassword");
     		var txtSecondPassword=$("#txtSecondPassword");
-    		var lstConocioOrganizacion=$("#lstConocioOrganizacion");
+    		
 
     		var lstEntereConvocatoria=$("#lstEntereConvocatoria");
             var lstPaisPreferencia=$("#lstPaisPreferencia");
@@ -50,10 +50,7 @@
     			swal("Repita la clave");
     			return false;
     		} 
-    		else if(lstConocioOrganizacion.val()==null){
-    			swal("Seleccione como conocio la organización");
-    			return false;
-    		} else if(txtPassword.val()!=txtSecondPassword.val()){
+    		 else if(txtPassword.val()!=txtSecondPassword.val()){
     			swal("las contraseñas no coinciden");
     			return false;
     		}
@@ -148,8 +145,7 @@
                     data["valUniversidad"]=$("#lstUniversidad").val();
                     data["nombreUniversidad"]=universidadNombre;
                     data["txtPassword"]=$("#txtPassword").val();
-                    data["txtSecondPassword"]=$("#txtSecondPassword").val();
-                    data["lstConocioOrganizacion"]=$("#lstConocioOrganizacion").val();
+                    data["txtSecondPassword"]=$("#txtSecondPassword").val();                    
                     data["lstEntereConvocatoria"]=$("#lstEntereConvocatoria").val();
                     data["lstPaisPreferencia"]=$("#lstPaisPreferencia").val();
                     data["lstPaisPreferenciaSegunda"]=$("#lstPaisPreferenciaSegunda").val();
