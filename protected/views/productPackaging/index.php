@@ -74,16 +74,17 @@
         <i class="material-icons prefix">event</i>
          <select class="listas" id="lstEntereConvocatoria">
            <option value="" disabled selected>Como me entere</option>
-           <option value="1">Universidad</option>
-           <option value="2">Correo</option>
+           <option value="1">Universidad (Stand, Redes Sociales, Correo, Cartelera, Evento)</option>
+           <!--<option value="2">Correo</option>-->
            <option value="3">Redes Sociales</option>
            <option value="4">WebSite</option>
-           <option value="5">Stand</option>
-           <option value="6">Evento o Cartelera</option>  
+           <!--<option value="5">Stand</option>-->
+           <!--<option value="6">Evento o Cartelera</option>  -->
            <option value="7">Google</option>
-           <option value="8">Medios de comunicación (Periódicos, Radio, TV, Artículos...)</option>
-           <option value="9">Evento, foro o conferencia</option>
-           <option value="10">Un amigo o conocido</option>           
+           <option value="8">Medios de comunicación (Periódicos, Artículos...)</option>
+           <option value="9">foro o conferencia</option>
+           <option value="10">Un amigo o conocido</option>   
+           <option value="11">Otras organizaciones Juveniles</option>         
          </select>
          <label>¿Cómo se enteró de la convocatoria?*</label>
      </div>
