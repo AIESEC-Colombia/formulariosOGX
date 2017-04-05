@@ -94,7 +94,7 @@
          <select class="listas" id="lstPaisPreferencia">
          <option value="" disabled selected>País de preferencia</option>
            <option value="1">Brasil</option>
-           <option value="2">Argentina</option>
+           <!--<option value="2">Argentina</option>-->
            <option value="3">Perú</option>
            <option value="4">México</option>           
          </select>
@@ -107,7 +107,7 @@
          <select class="listas" id="lstPaisPreferenciaSegunda">
           <option value="" disabled selected>Segunda preferencia</option>
            <option value="1">Brasil</option>
-           <option value="2">Argentina</option>
+           <!--<option value="2">Argentina</option>-->
            <option value="3">Perú</option>
            <option value="4">México</option>           
          </select>
