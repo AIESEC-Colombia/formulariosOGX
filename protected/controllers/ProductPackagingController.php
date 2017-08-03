@@ -50,8 +50,8 @@ class ProductPackagingController extends Controller
 	public function actionInserExpa(){
 		try {
 			$Json= $_POST['parametros'];
-			$app_id=17897224;
-			$app_token="5d5b72f9e91c460da0b35559a311e046";
+			$app_id="tu app id";
+			$app_token="tu token id";
 			Yii::import("application.extensions.podio.PodioAPI", true);
 			Yii::import("application.extensions.Utilidades.Comite", true);
 			Podio::setup("developerupb-lecr99", "ewH2NOFno2Aucnrxx7KcKmFUGrhQ5IBNJYnrHA3442j7IKf9wkQyl7EULzsfIC8g");
