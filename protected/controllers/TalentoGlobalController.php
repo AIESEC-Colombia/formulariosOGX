@@ -50,8 +50,8 @@ class TalentoGlobalController extends Controller
 	public function actionInserExpa(){
 		try {
 		$Json= $_POST['parametros'];
-		$app_id=17376671;
-		$app_token="35dcfb3e684f414f9cd2de1b2cb97115";
+		$app_id="tu app id";
+		$app_token="tu token id";
 		Yii::import("application.extensions.podio.PodioAPI", true);
 		Yii::import("application.extensions.Utilidades.Comite", true);
 		Podio::setup("developerupb-lecr99", "ewH2NOFno2Aucnrxx7KcKmFUGrhQ5IBNJYnrHA3442j7IKf9wkQyl7EULzsfIC8g");
