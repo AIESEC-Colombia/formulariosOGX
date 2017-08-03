@@ -50,8 +50,8 @@ class VoluntarioGlobalController extends Controller
 	public function actionInserExpa(){
 		try {
 			$Json= $_POST['parametros'];
-			$app_id=17379862;
-			$app_token="1723b96a6f9e43cd82b470f7f6ab1dc2";
+			$app_id="tu app id";
+			$app_token="tu token id";
 			Yii::import("application.extensions.podio.PodioAPI", true);
 			Yii::import("application.extensions.Utilidades.Comite", true);
 			Podio::setup("developerupb-lecr99", "ewH2NOFno2Aucnrxx7KcKmFUGrhQ5IBNJYnrHA3442j7IKf9wkQyl7EULzsfIC8g");
