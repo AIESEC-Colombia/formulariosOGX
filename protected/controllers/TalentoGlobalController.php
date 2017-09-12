@@ -50,8 +50,8 @@ class TalentoGlobalController extends Controller
 	public function actionInserExpa(){
 		try {
 		$Json= $_POST['parametros'];
-		$app_id="tu app id";
-		$app_token="tu token id";
+		$app_id=17376671;
+		$app_token="35dcfb3e684f414f9cd2de1b2cb97115";
 		Yii::import("application.extensions.podio.PodioAPI", true);
 		Yii::import("application.extensions.Utilidades.Comite", true);
 		Podio::setup("developerupb-lecr99", "ewH2NOFno2Aucnrxx7KcKmFUGrhQ5IBNJYnrHA3442j7IKf9wkQyl7EULzsfIC8g");
@@ -67,6 +67,14 @@ class TalentoGlobalController extends Controller
 		  new PodioCategoryItemField(array("external_id" => "iduniversity", "values" => $Json['valUniversidad'])),
 		  new PodioCategoryItemField(array("external_id" => "university", "values" => $Json['nombreUniversidad'])),
 		  new PodioCategoryItemField(array("external_id" => "howmet-2", "values" => (int)$Json['lstConocioOrganizacion'])),
+
+		   new PodioCategoryItemField(array("external_id" => "fecha-de-viaje", "values" => (int) $Json['lstFechaViaje'])),
+		  new PodioCategoryItemField(array("external_id" => "preferencia-de-contacto", "values" => (int) $Json['lstContactoPreferencia'])),
+
+		  new PodioCategoryItemField(array("external_id" => "nivel-de-ingles", "values" => (int) $Json['lstNivelIngles'])),
+		  new PodioCategoryItemField(array("external_id" => "experiencia-de-trabajo", "values" => (int) $Json['lstExperienciaTrabajo'])),
+		  new PodioCategoryItemField(array("external_id" => "carrera", "values" => $Json['lstCarreraEstudiante'])),
+		  new PodioCategoryItemField(array("external_id" => "semestre", "values" =>(int) $Json['lstSemestre'])),
 		  new PodioCategoryItemField(array("external_id" => "worksfield", "values" => $Json['lstCampos']))
 		  ,
 			  new PodioCategoryItemField(array("external_id" => "lc", "values" => $Comite->getValorPodio((int) $Json['valUniversidad'])))

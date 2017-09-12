@@ -81,6 +81,30 @@
          </select>
          <label>¿Cómo conoció AIESEC?*</label>
      </div>
+
+     <div class="input-field col s12">
+        <i class="material-icons prefix">airplanemode</i>
+         <select class="listas" id="lstFechaViaje">
+           <option value="" disabled selected>Cuando crees que sería la fecha de viaje?</option>
+           <option value="1">De hoy a 6 meses</option>
+           <option value="2">De 6 meses un año</option>
+           <option value="3">Sin fecha fija pero quiero conocer más</option>        
+         </select>
+         <label>¿Cuando crees que sería la fecha de viaje?*</label>
+     </div>
+
+     <div class="input-field col s12">
+        <i class="material-icons prefix">group</i>
+         <select class="listas" id="lstContactoPreferencia">
+           <option value="" disabled selected>Preferencia de Contacto?</option>
+           <option value="1">Correo Electrónico</option>
+           <option value="2">Llamada</option>
+           <option value="3">Whatsapp</option>        
+         </select>
+         <label>¿Preferencia de Contacto?*</label>
+     </div>
+
+
      
      <div class="input-field col s12">          
         <input type="checkbox" id="rbAceptoTerminos" />

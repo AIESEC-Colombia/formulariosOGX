@@ -15,6 +15,13 @@
     		var lstConocioOrganizacion=$("#lstConocioOrganizacion");
             var lstCampos=$("#lstCampos");
 
+            var lstFechaViaje  = $("#lstFechaViaje");
+            var lstContactoPreferencia = $("#lstContactoPreferencia");
+            var lstNivelIngles = $("#lstNivelIngles");
+            var lstExperienciaTrabajo = $("#lstExperienciaTrabajo");
+            var lstCarreraEstudiante = $("#lstCarreraEstudiante");
+            var lstSemestre = $("#lstSemestre");
+
     		if(txtFirstName.val()==""){
     			swal("Ingrese su nombre");
     			return false;
@@ -54,6 +61,29 @@
     		}else if(lstCampos.val()==null){
                 swal("Seleccione su área de preferencia");
                 return false;
+            }else if(lstFechaViaje.val()==null){
+                swal("Seleccione su la fecha de viaje");
+                return false;
+            }
+            else if(lstContactoPreferencia.val()==null){
+                swal("Seleccione como prefiere se contactado");
+                return false;
+            }
+             else if(lstNivelIngles.val()==null){
+                swal("Seleccione su nivel de ingles");
+                return false;
+            }
+            else if(lstExperienciaTrabajo.val()==null){
+                swal("Seleccione su experiencia de trabajo");
+                return false;
+            }
+            else if(lstCarreraEstudiante.val()==null){
+                swal("Seleccione la carrera que estudio");
+                return false;
+            }
+            else if(lstSemestre.val()==null){
+                swal("Seleccione el semestre en el que esta actualmente");
+                return false;
             }
             else if(!($("#rbAceptoTerminos").is(":checked"))){
                 swal("Debe aceptar los términos y condiciones de privacidad");
@@ -76,7 +106,7 @@
               closeOnConfirm: false
             },
             function(){
-               location.reload();
+               location.href = "http://aieseccolombia.org/inscripcion-exitosa-emprendedor/";
             });
 
         }
@@ -114,8 +144,9 @@
     		$("#btnIngresar").click(function(){
                 var universidadNombre;
                 lstU= document.getElementById("lstUniversidad");
+                lstC = document.getElementById("lstCarreraEstudiante")
                 universidadNombre=lstU.options[lstU.selectedIndex].innerHTML;
-                
+                carreraNombre = lstC.options[lstC.selectedIndex].innerHTML;
     			if(Validar() && ValidarClave($("#txtPassword").val())){
                     var url="index.php?r=formulario/InserExpa";
                     var data={};                   
@@ -130,6 +161,12 @@
                     data["txtSecondPassword"]=$("#txtSecondPassword").val();
                     data["lstConocioOrganizacion"]=$("#lstConocioOrganizacion").val();
                     data["lstCampos"]=$("#lstCampos").val();
+                    data["lstFechaViaje"] = $("#lstFechaViaje").val();
+                    data["lstContactoPreferencia"] = $("#lstContactoPreferencia").val();
+                    data["lstNivelIngles"] = $("#lstNivelIngles").val();
+                    data["lstExperienciaTrabajo"] = $("#lstExperienciaTrabajo").val();
+                    data["lstCarreraEstudiante"] = carreraNombre;
+                    data["lstSemestre"] = $("#lstSemestre").val();
                     
     				ajax.ajaxSinJson(data,url,saveEndAjax);
                     $.blockUI({ 

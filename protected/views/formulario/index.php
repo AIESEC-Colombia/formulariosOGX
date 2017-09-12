@@ -81,12 +81,159 @@
          </select>
          <label>¿Cómo conoció AIESEC?*</label>
      </div>
+
      <div class="input-field col s12">
         <i class="material-icons prefix" >local library</i>
          <select class="listas" id="lstCampos">
            <option value="" disabled selected>Campos de trabajos</option>             
          </select>
          <label>Campos de trabajos*</label>
+     </div>
+     
+     <div class="input-field col s12">
+        <i class="material-icons prefix">flight land</i>
+         <select class="listas" id="lstFechaViaje">
+           <option value="" disabled selected>Cuando crees que sería la fecha de viaje?</option>
+           <option value="1">De hoy a 6 meses</option>
+           <option value="2">De 6 meses un año</option>
+           <option value="3">Sin fecha fija pero quiero conocer más</option>        
+         </select>
+         <label>¿Cuando crees que sería la fecha de viaje?*</label>
+     </div>
+
+     <div class="input-field col s12">
+        <i class="material-icons prefix">group</i>
+         <select class="listas" id="lstContactoPreferencia">
+           <option value="" disabled selected>Preferencia de Contacto?</option>
+           <option value="1">Correo Electrónico</option>
+           <option value="2">Llamada</option>
+           <option value="3">Whatsapp</option>        
+         </select>
+         <label>¿Preferencia de Contacto?*</label>
+     </div>
+     <div class="input-field col s12">
+       
+         <select class="listas" id="lstNivelIngles">
+           <option value="" disabled selected>Nivel de Inglés?</option>
+           <option value="1">Básico</option>
+           <option value="2">Intermedio</option>
+           <option value="3">Avanzado</option>        
+         </select>
+         <label>¿Nivel de Inglés?*</label>
+     </div>
+     <div class="input-field col s12">
+        <i class="material-icons prefix">rowing</i>
+         <select class="listas" id="lstExperienciaTrabajo">
+           <option value="" disabled selected>Experiencia de trabajo en el área de estudio?</option>
+           <option value="1">Menos de 3 meses de experiencia</option>
+           <option value="2">6 meses de experiencia</option>
+           <option value="3">1 año de experiencia</option>   
+           <option value="4">Más de 1 año de experiencia</option>        
+         </select>
+         <label>¿Experiencia de trabajo en el área de estudio?*</label>
+     </div>
+     <div class="input-field col s12">
+        <i class="material-icons prefix">trending up</i>
+         <select class="listas" id="lstCarreraEstudiante">
+           <option value="" disabled selected>Que carrera estudias/estudiaste?</option>
+            <option value="1">Actividad física y del Deporte</option>
+             <option value="2">Administración de Recursos Humanos</option>
+             <option value="3">Administración de empresas</option>
+             <option value="4">Agronomía</option>
+             <option value="5">Antropología</option>
+             <option value="6">Arqueología</option>
+             <option value="7">Arquitectura</option>
+             <option value="8">Arte</option>
+             <option value="9">Astronomía</option>
+             <option value="10">Bibliotecología</option>
+             <option value="11">Biología</option>
+             <option value="12">Biología Química</option>
+             <option value="13">Ciencia Política y Gobierno</option>
+             <option value="14">Ciencia y Tecnología de los Alimentos</option>
+             <option value="15">Ciencias Ambientales</option>
+             <option value="16">Comercio Internacional</option>
+             <option value="17">Comunicación Social</option>
+             <option value="18">Contaduría Pública y Auditoría</option>
+             <option value="19">Derecho</option>
+             <option value="20">Diseño Gráfico</option>
+             <option value="21">Diseño Industrial</option>
+             <option value="22">Diseño de Interiores</option>
+             <option value="23">Diseño de Modas</option>
+             <option value="24">Economía</option>
+             <option value="25">Enfermería</option>
+             <option value="26">Estadística</option>
+             <option value="27">Farmacia</option>
+             <option value="28">Filología</option>
+             <option value="29">Filosofía</option>
+             <option value="30">Finanzas</option>
+             <option value="31">Física</option>
+             <option value="32">Geografía</option>
+             <option value="33">Geología</option>
+             <option value="34">Historia</option>
+             <option value="35">Historia del Arte</option>
+             <option value="36">Ingeniería Administrativa</option>
+             <option value="37">Ingeniería Catastral y Geodesia</option>
+             <option value="38">Ingeniería Civil</option>
+             <option value="39">Ingeniería Electrónica</option>
+             <option value="40">Ingeniería Eléctrica</option>
+             <option value="41">Ingeniería Industrial</option>
+             <option value="42">Ingeniería Mecánica</option>
+             <option value="43">Ingeniería Multimedia</option>
+             <option value="44">Ingeniería de Desarrollo de Producto</option>
+             <option value="45">Ingeniería de Procesos</option>
+             <option value="46">Ingeniería de Producción</option>
+             <option value="47">Ingeniería en Agrimensura</option>
+             <option value="48">Ingeniería en Petróleos</option>
+             <option value="49">Ingeniería en Sistemas</option>
+             <option value="50">Ingeniería en Telecomunicaciones</option>
+             <option value="51">Ingeniería mecatrónica</option>
+             <option value="52">Licenciatura en Español y Literatura</option>
+             <option value="53">Licenciatura en Lenguas Extranjeras/Modernas</option>
+             <option value="54">Liderazgo Organizacional</option>
+             <option value="55">Lingüística</option>
+             <option value="56">Literatura</option>
+             <option value="57">Matemática</option>
+             <option value="58">Medicina</option>
+             <option value="59">Mercadotecnia</option>
+             <option value="60">Música</option>
+             <option value="61">Nutrición y Dietética</option>
+             <option value="62">Odontología</option>
+             <option value="63">Pedagogía</option>
+             <option value="64">Periodismo</option>
+             <option value="65">Psicología</option>
+             <option value="66">Psicopedagogía</option>
+             <option value="67">Publicidad y Relaciones Públicas</option>
+             <option value="68">Química</option>
+             <option value="69">Relaciones Internacionales</option>
+             <option value="70">Sociología</option>
+             <option value="71">Tecnología en análisis y desarrollo de sistemas de Información</option>
+             <option value="72">Tecnología en negocios internacionales</option>
+             <option value="73">Teología</option>
+             <option value="74">Trabajo Social</option>
+             <option value="75">Traducción e Interpretación</option>
+             <option value="76">Turismo</option>
+             <option value="77">Veterinaria</option>
+             <option value="78">Zootecnia</option>      
+         </select>
+         <label>¿Que carrera estudias/estudiaste?*</label>
+     </div>
+     <div class="input-field col s12">
+        <i class="material-icons prefix">border color</i>
+         <select class="listas" id="lstSemestre">
+           <option value="" disabled selected>Semestre?</option>
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>   
+           <option value="4">4</option> 
+           <option value="5">5</option> 
+           <option value="6">6</option> 
+           <option value="7">7</option> 
+           <option value="8">8</option> 
+           <option value="9">9</option> 
+           <option value="10">10</option> 
+           <option value="11">Graduado</option> 
+         </select>
+         <label>¿Semestre?*</label>
      </div>
      <div class="input-field col s12">          
         <input type="checkbox" id="rbAceptoTerminos" />
