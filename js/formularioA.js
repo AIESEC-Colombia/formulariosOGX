@@ -144,7 +144,7 @@
                 universidadNombre=lstU.options[lstU.selectedIndex].innerHTML;
                 carreraNombre = lstC.options[lstC.selectedIndex].innerHTML;
     			if(Validar() && ValidarClave($("#txtPassword").val())){
-                    var url="index.php?r=formulario/InserExpa";
+                    var url="index.php?r=formularioA/InserExpa";
                     var data={};                   
                     data["txtFirstName"]=$("#txtFirstName").val();
                     data["txtLastName"]=$("#txtLastName").val();
