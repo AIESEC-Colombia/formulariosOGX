@@ -144,7 +144,7 @@
                 universidadNombre=lstU.options[lstU.selectedIndex].innerHTML;
                 carreraNombre = lstC.options[lstC.selectedIndex].innerHTML;
     			if(Validar() && ValidarClave($("#txtPassword").val())){
-                    var url="index.php?r=formularioA/InserExpa";
+                    var url="index.php?r=formulario/InserExpa";
                     var data={};                   
                     data["txtFirstName"]=$("#txtFirstName").val();
                     data["txtLastName"]=$("#txtLastName").val();
@@ -172,7 +172,7 @@
     		});
             $("#btnTerminosCondiciones").click(function(e){
                 e.preventDefault();
-                window.open("https://opportunities.aiesec.org/assets/terms.pdf");
+                window.open("http://aieseccolombia.org/wp-content/uploads/2017/02/AVISO-DE-PRIVACIDAD-1.pdf");
             });
             ajax.ajax({},"index.php?r=formulario/UniversidadesColombia",endLoadList);
 
