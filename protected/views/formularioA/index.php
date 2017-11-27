@@ -69,7 +69,7 @@
         <label for="txtSecondPassword">Repita la Clave*</label>
       </div>
      <div class="input-field col s12">
-        <i class="material-icons prefix" >local library</i>
+        <i class="material-icons prefix" >local_library</i>
          <select class="listas" id="lstCampos">
            <option value="" disabled selected>Campos de trabajos</option>             
          </select>
@@ -77,7 +77,7 @@
      </div>
      
      <div class="input-field col s12">
-        <i class="material-icons prefix">flight land</i>
+        <i class="material-icons prefix">flight_land</i>
          <select class="listas" id="lstFechaViaje">
            <option value="" disabled selected>Cuando crees que sería la fecha de viaje?</option>
            <option value="1">De hoy a 6 meses</option>
@@ -98,7 +98,7 @@
          <label>¿Preferencia de Contacto?*</label>
      </div>
      <div class="input-field col s12">
-       
+       <i class="material-icons prefix">flight_land</i>
          <select class="listas" id="lstNivelIngles">
            <option value="" disabled selected>Nivel de Inglés?</option>
            <option value="1">Básico</option>
@@ -119,7 +119,7 @@
          <label>¿Experiencia de trabajo en el área de estudio?*</label>
      </div>
      <div class="input-field col s12">
-        <i class="material-icons prefix">trending up</i>
+        <i class="material-icons prefix">trending_up</i>
          <select class="listas" id="lstCarreraEstudiante">
            <option value="" disabled selected>Que carrera estudias/estudiaste?</option>
             <option value="1">Actividad física y del Deporte</option>
@@ -204,7 +204,7 @@
          <label>¿Que carrera estudias/estudiaste?*</label>
      </div>
      <div class="input-field col s12">
-        <i class="material-icons prefix">border color</i>
+        <i class="material-icons prefix">border_color</i>
          <select class="listas" id="lstSemestre">
            <option value="" disabled selected>Semestre?</option>
            <option value="1">1</option>

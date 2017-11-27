@@ -83,7 +83,7 @@
      </div>
 
      <div class="input-field col s12">
-        <i class="material-icons prefix">airplanemode</i>
+        <i class="material-icons prefix">flight_land</i>
          <select class="listas" id="lstFechaViaje">
            <option value="" disabled selected>Cuando crees que sería la fecha de viaje?</option>
            <option value="1">De hoy a 6 meses</option>
