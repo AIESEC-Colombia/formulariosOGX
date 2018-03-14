@@ -174,7 +174,7 @@
                 e.preventDefault();
                 window.open("http://aieseccolombia.org/wp-content/uploads/2017/02/AVISO-DE-PRIVACIDAD-1.pdf");
             });
-            ajax.ajax({},"index.php?r=emprendendorAds/UniversidadesColombia",endLoadList);
+            ajax.ajax({},"index.php?r=formulario/UniversidadesColombia",endLoadList);
 
 
     	};
