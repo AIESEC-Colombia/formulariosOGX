@@ -170,7 +170,7 @@ class FormularioAController extends Controller
 	}
 
 	public function actionUniversidadesColombia(){
-		$data = file_get_contents("https://gis-api.aiesec.org/v1/lists/mcs_alignments.json");
+		$data = file_get_contents("https://gis-api.aiesec.org/v2/lists/mcs_alignments.json");
 		$arrayData=json_decode($data);
 		$colombia=[];
 		foreach ($arrayData as $key => $value) {
