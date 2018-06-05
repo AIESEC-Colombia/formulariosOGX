@@ -12,7 +12,8 @@
     		var lstUniversidad=$("#lstUniversidad");
     		var txtPassword=$("#txtPassword");
     		var txtSecondPassword=$("#txtSecondPassword");
-    		var lstFechaViaje = $("#lstFechaViaje");
+            var lstConocioOrganizacion=$("#lstConocioOrganizacion");
+            var lstFechaViaje = $("#lstFechaViaje");
             var lstContactoPreferencia = $("#lstContactoPreferencia");
             
 
@@ -45,8 +46,11 @@
     		else if(txtSecondPassword.val()==""){
     			swal("Repita la clave");
     			return false;
-    		} 
-    		else if(lstFechaViaje.val()==null){
+            } 
+            else if(lstConocioOrganizacion.val()==null){
+    			swal("Seleccione como conocio la organización");
+    			return false;
+    		}else if(lstFechaViaje.val()==null){
                 swal("Seleccione la fecha del viaje");
                 return false;
             }else if(lstContactoPreferencia.val()==null){
@@ -129,6 +133,7 @@
                     data["nombreUniversidad"]=universidadNombre;
                     data["txtPassword"]=$("#txtPassword").val();
                     data["txtSecondPassword"]=$("#txtSecondPassword").val();
+                    data["lstConocioOrganizacion"]=$("#lstConocioOrganizacion").val();
                     data["lstFechaViaje"]=$("#lstFechaViaje").val();
                     data["lstContactoPreferencia"]=$("#lstContactoPreferencia").val();
                    

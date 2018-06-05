@@ -69,6 +69,16 @@
         <label for="txtSecondPassword">Repita la Clave*</label>
       </div>
       
+      <div class="input-field col s12">
+        <i class="material-icons prefix">email</i>
+         <select class="listas" id="lstConocioOrganizacion">
+           <option value="" disabled selected>Como conocia la organización</option>
+           <option value="7">Redes Sociales</option>
+           <option value="8">Siendo Kam</option>
+           <option value="9">Julian Dice</option>
+            </select>
+         <label>¿Cómo conoció AIESEC?*</label>
+     </div>
 
      <div class="input-field col s12">
         <i class="material-icons prefix">flight_land</i>
