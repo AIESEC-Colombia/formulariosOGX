@@ -78,6 +78,7 @@
            <option value="4">Medios de comunicación (Periódicos, Radio, TV, Artículos...)</option>
            <option value="5">Youth Speak</option>
            <option value="6">Un amigo o conocido</option>
+           <option value="7">Redes sociales de un amigo</option>
          </select>
          <label>¿Cómo conoció AIESEC?*</label>
      </div>
