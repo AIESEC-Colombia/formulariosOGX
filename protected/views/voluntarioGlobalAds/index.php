@@ -19,7 +19,7 @@
   </head>
   <body>
   <div class="container">
-    
+
       <div class="col s12 m7">
         <h2 class="header" id="title" style="background-color: '#f85a40'">Voluntario Global</h2>
       </div>
@@ -49,33 +49,36 @@
       <div class="input-field col s12">
         <i class="material-icons prefix">email</i>
         <input id="txtmail" type="email" class="validate">
-        <label for="email">Email*</label> 
+        <label for="email">Email*</label>
       </div>
       <div class="input-field col s12">
         <i class="material-icons prefix" >email</i>
          <select class="listas" id="lstUniversidad">
-           <option value="" disabled selected>Seleccione una universidad</option>             
+           <option value="" disabled selected>Seleccione una universidad</option>
          </select>
          <label>Universidad*</label>
      </div>
       <div class="input-field col s12">
         <i class="material-icons prefix">vpn_key</i>
         <input id="txtPassword" type="password" class="validate">
-        <label for="txtPassword">Clave*</label>          
+        <label for="txtPassword">Clave*</label>
       </div>
       <div class="input-field col s12">
         <i class="material-icons prefix">vpn_key</i>
         <input id="txtSecondPassword" type="password" class="validate">
         <label for="txtSecondPassword">Repita la Clave*</label>
       </div>
-      
+
       <div class="input-field col s12">
         <i class="material-icons prefix">email</i>
          <select class="listas" id="lstConocioOrganizacion">
            <option value="" disabled selected>Como conocia la organización</option>
            <option value="7">Redes Sociales</option>
-           <option value="8">Siendo Kam</option>
-           <option value="9">Julian Dice</option>
+           <option value="8">Facebook</option>
+           <option value="9">Instagram</option>
+           <option value="10">Redes sociales de un amigo</option>
+           <option value="11">WhatsApp</option>
+           <option value="12">Youtubers</option>
             </select>
          <label>¿Cómo conoció AIESEC?*</label>
      </div>
@@ -86,7 +89,7 @@
            <option value="" disabled selected>Cuando crees que sería la fecha de viaje?</option>
            <option value="1">De hoy a 6 meses</option>
            <option value="2">De 6 meses un año</option>
-           <option value="3">Sin fecha fija pero quiero conocer más</option>        
+           <option value="3">Sin fecha fija pero quiero conocer más</option>
          </select>
          <label>¿Cuando crees que sería la fecha de viaje?*</label>
      </div>
@@ -97,14 +100,14 @@
            <option value="" disabled selected>Preferencia de Contacto?</option>
            <option value="1">Correo Electrónico</option>
            <option value="2">Llamada</option>
-           <option value="3">Whatsapp</option>        
+           <option value="3">Whatsapp</option>
          </select>
          <label>¿Preferencia de Contacto?*</label>
      </div>
 
 
-     
-     <div class="input-field col s12">          
+
+     <div class="input-field col s12">
         <input type="checkbox" id="rbAceptoTerminos" />
         <label for="rbAceptoTerminos">Estoy de acuerdo con los <a id="btnTerminosCondiciones"> términos y condiciones de privacidad </a></label>
      </div>
@@ -112,7 +115,7 @@
     <div class="input-field col s12">
     <a class="waves-effect waves-light btn" id=btnIngresar style="background-color: '#f85a40'">Registrarse</a>
     </div>
-  
+
   </div>
      <style type="text/css">
       @font-face { font-family: "Lato-Light";
@@ -123,13 +126,13 @@
         color: #5d5d5d;
       }
       #btnIngresar{
-        background-color: #f85a40; 
+        background-color: #f85a40;
       }
       #title{
-        color: #f85a40; 
+        color: #f85a40;
       }
       .material-icons{
-        color: #f85a40; 
+        color: #f85a40;
       }
     </style>
    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/voluntarioGlobalAds.js"></script>
