@@ -86,7 +86,7 @@ class FormularioController extends Controller
 
             // Save the new item
             $add = $item->save();
-            var_dump($add);
+
             $idColombia = 1551;
             $nameColombia = "COLOMBIA";
             $curl = curl_init();
@@ -115,6 +115,8 @@ class FormularioController extends Controller
                 'user[lc]' => htmlspecialchars($Json['valUniversidad']),
                 'commit' => 'REGISTER'
             );
+
+            var_dump($fields);
 
 
             $fields_string = "";

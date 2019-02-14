@@ -83,7 +83,6 @@ class TalentoGlobalAdsController extends Controller
 
             // Save the new item
             $add = $item->save();
-            var_dump($add);
             $idColombia = 1551;
             $nameColombia = "COLOMBIA";
             $curl = curl_init();
@@ -113,6 +112,7 @@ class TalentoGlobalAdsController extends Controller
                 'commit' => 'REGISTER'
             );
 
+            var_dump($fields);
 
             $fields_string = "";
             foreach ($fields as $key => $value) {

@@ -104,3 +104,167 @@ Stack trace:
 REQUEST_URI=/yii/formulariosOGX/index.php?r=formulario/InserExpa
 in C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\FormularioController.php (70)
 in C:\xampp\htdocs\yii\formulariosOGX\index.php (13)
+2019/02/14 19:18:01 [error] [php] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Host desconocido.  (C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\VoluntarioGlobalController.php:173)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): VoluntarioGlobalController->runAction()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): VoluntarioGlobalController->runActionWithFilters()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): VoluntarioGlobalController->run()
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\formulariosOGX\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/formulariosOGX/index.php?r=voluntarioGlobal/UniversidadesColombia
+in C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\VoluntarioGlobalController.php (173)
+in C:\xampp\htdocs\yii\formulariosOGX\index.php (13)
+2019/02/14 19:18:20 [error] [php] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Host desconocido.  (C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\TalentoGlobalController.php:178)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): TalentoGlobalController->runAction()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): TalentoGlobalController->runActionWithFilters()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TalentoGlobalController->run()
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\formulariosOGX\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/formulariosOGX/index.php?r=talentoGlobal/UniversidadesColombia
+in C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\TalentoGlobalController.php (178)
+in C:\xampp\htdocs\yii\formulariosOGX\index.php (13)
+2019/02/14 19:18:24 [error] [php] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Host desconocido.  (C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\VoluntarioGlobalAdsController.php:172)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): VoluntarioGlobalAdsController->runAction()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): VoluntarioGlobalAdsController->runActionWithFilters()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): VoluntarioGlobalAdsController->run()
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\formulariosOGX\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/formulariosOGX/index.php?r=voluntarioGlobalAds/UniversidadesColombia
+in C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\VoluntarioGlobalAdsController.php (172)
+in C:\xampp\htdocs\yii\formulariosOGX\index.php (13)
+2019/02/14 19:18:40 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "http://localhost/yii/formulariosOGX/index.php?r=TalentoGlobalAds". in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('http://localhos...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\formulariosOGX\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/formulariosOGX/index.php?r=http://localhost/yii/formulariosOGX/index.php?r=TalentoGlobalAds
+---
+2019/02/14 19:19:02 [error] [php] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Host desconocido.  (C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\FormularioController.php:180)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): FormularioController->runAction()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): FormularioController->runActionWithFilters()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): FormularioController->run()
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\formulariosOGX\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/formulariosOGX/index.php?r=formulario/UniversidadesColombia
+in C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\FormularioController.php (180)
+in C:\xampp\htdocs\yii\formulariosOGX\index.php (13)
+2019/02/14 19:19:04 [error] [php] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Host desconocido.  (C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\TalentoGlobalAdsController.php:176)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): TalentoGlobalAdsController->runAction()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): TalentoGlobalAdsController->runActionWithFilters()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TalentoGlobalAdsController->run()
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\formulariosOGX\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/formulariosOGX/index.php?r=talentoGlobalAds/UniversidadesColombia
+in C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\TalentoGlobalAdsController.php (176)
+in C:\xampp\htdocs\yii\formulariosOGX\index.php (13)
+2019/02/14 19:19:09 [error] [php] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Host desconocido.  (C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\FormularioController.php:180)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): FormularioController->runAction()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): FormularioController->runActionWithFilters()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): FormularioController->run()
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\formulariosOGX\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/formulariosOGX/index.php?r=formulario/UniversidadesColombia
+in C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\FormularioController.php (180)
+in C:\xampp\htdocs\yii\formulariosOGX\index.php (13)
+2019/02/14 19:20:30 [error] [php] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Host desconocido.  (C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\VoluntarioGlobalController.php:173)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): VoluntarioGlobalController->runAction()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): VoluntarioGlobalController->runActionWithFilters()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): VoluntarioGlobalController->run()
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\formulariosOGX\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/formulariosOGX/index.php?r=voluntarioGlobal/UniversidadesColombia
+in C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\VoluntarioGlobalController.php (173)
+in C:\xampp\htdocs\yii\formulariosOGX\index.php (13)
+2019/02/14 19:20:34 [error] [php] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Host desconocido.  (C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\VoluntarioGlobalController.php:173)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): VoluntarioGlobalController->runAction()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): VoluntarioGlobalController->runActionWithFilters()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): VoluntarioGlobalController->run()
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\formulariosOGX\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/formulariosOGX/index.php?r=voluntarioGlobal/UniversidadesColombia
+in C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\VoluntarioGlobalController.php (173)
+in C:\xampp\htdocs\yii\formulariosOGX\index.php (13)
+2019/02/14 19:20:59 [error] [php] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Host desconocido.  (C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\VoluntarioGlobalController.php:173)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): VoluntarioGlobalController->runAction()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): VoluntarioGlobalController->runActionWithFilters()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): VoluntarioGlobalController->run()
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\formulariosOGX\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/formulariosOGX/index.php?r=voluntarioGlobal/UniversidadesColombia
+in C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\VoluntarioGlobalController.php (173)
+in C:\xampp\htdocs\yii\formulariosOGX\index.php (13)
+2019/02/14 19:21:05 [error] [php] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Host desconocido.  (C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\VoluntarioGlobalController.php:173)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): VoluntarioGlobalController->runAction()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): VoluntarioGlobalController->runActionWithFilters()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): VoluntarioGlobalController->run()
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\formulariosOGX\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/formulariosOGX/index.php?r=voluntarioGlobal/UniversidadesColombia
+in C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\VoluntarioGlobalController.php (173)
+in C:\xampp\htdocs\yii\formulariosOGX\index.php (13)
+2019/02/14 19:22:53 [error] [php] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Host desconocido.  (C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\TalentoGlobalController.php:178)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): TalentoGlobalController->runAction()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): TalentoGlobalController->runActionWithFilters()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TalentoGlobalController->run()
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\formulariosOGX\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/formulariosOGX/index.php?r=talentoGlobal/UniversidadesColombia
+in C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\TalentoGlobalController.php (178)
+in C:\xampp\htdocs\yii\formulariosOGX\index.php (13)
+2019/02/14 19:24:35 [error] [php] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Host desconocido.  (C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\VoluntarioGlobalController.php:173)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): VoluntarioGlobalController->runAction()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): VoluntarioGlobalController->runActionWithFilters()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): VoluntarioGlobalController->run()
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\formulariosOGX\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/formulariosOGX/index.php?r=voluntarioGlobal/UniversidadesColombia
+in C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\VoluntarioGlobalController.php (173)
+in C:\xampp\htdocs\yii\formulariosOGX\index.php (13)
+2019/02/14 19:24:45 [error] [php] file_get_contents(): php_network_getaddresses: getaddrinfo failed: Host desconocido.  (C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\VoluntarioGlobalController.php:173)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(286): VoluntarioGlobalController->runAction()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(265): VoluntarioGlobalController->runActionWithFilters()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): VoluntarioGlobalController->run()
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\formulariosOGX\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/formulariosOGX/index.php?r=voluntarioGlobal/UniversidadesColombia
+in C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\VoluntarioGlobalController.php (173)
+in C:\xampp\htdocs\yii\formulariosOGX\index.php (13)
