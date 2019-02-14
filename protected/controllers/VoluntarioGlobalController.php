@@ -57,7 +57,10 @@ class VoluntarioGlobalController extends Controller
 			Podio::setup("developerupb-lecr99", "ewH2NOFno2Aucnrxx7KcKmFUGrhQ5IBNJYnrHA3442j7IKf9wkQyl7EULzsfIC8g");
 			Podio::authenticate_with_app($app_id, $app_token);
 			$Comite=new Comite();
-		
+
+			var_dump($Json);
+			exit;
+
 
 			$fields = new PodioItemFieldCollection(array(
 			  new PodioTextItemField(array("external_id" => "titulo", "values" => $Json['txtFirstName'] )),
