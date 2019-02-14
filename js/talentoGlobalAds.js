@@ -150,12 +150,12 @@
     		$("#btnIngresar").click(function(){
                 var universidadNombre;
                 lstU= document.getElementById("lstUniversidad");
-                lstC = document.getElementById("lstCarreraEstudiante")
+                lstC = document.getElementById("lstCarreraEstudiante");
                 universidadNombre=lstU.options[lstU.selectedIndex].innerHTML;
                 carreraNombre = lstC.options[lstC.selectedIndex].innerHTML;
                 
     			if(Validar() && ValidarClave($("#txtPassword").val())){
-                    var url="index.php?r=talentoGlobalAds/InserExpa";
+                    var url="index.php?r=TalentoGlobalAds/inserExpa";
                     bolEmprendedor = false;
                     
                     if($("#lstExperienciaTrabajo").val() == "1"){
@@ -167,6 +167,7 @@
                         url="index.php?r=emprendendorAds/InserExpa";
                         bolEmprendedor = true;
                     }
+
                     var data={};                   
                     data["txtFirstName"]=$("#txtFirstName").val();
                     data["txtLastName"]=$("#txtLastName").val();

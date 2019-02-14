@@ -136,8 +136,7 @@
                     data["lstConocioOrganizacion"]=$("#lstConocioOrganizacion").val();
                     data["lstFechaViaje"]=$("#lstFechaViaje").val();
                     data["lstContactoPreferencia"]=$("#lstContactoPreferencia").val();
-                   
-                    
+
     				ajax.ajaxSinJson(data,url,saveEndAjax,errorEnd);
                     $.blockUI({ 
                         message: $(' <div class="progress"><div class="indeterminate"></div></div>'), 

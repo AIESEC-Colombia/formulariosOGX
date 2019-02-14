@@ -171,6 +171,7 @@
                         url="index.php?r=formulario/InserExpa";
                         bolEmprendedor = true;
                     }
+
                     var data={};                   
                     data["txtFirstName"]=$("#txtFirstName").val();
                     data["txtLastName"]=$("#txtLastName").val();

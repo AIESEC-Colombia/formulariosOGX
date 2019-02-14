@@ -77,97 +77,103 @@ class ProductPackagingController extends Controller
 			new PodioCategoryItemField(array("external_id" => "categoria", "values" => (int) $Json['lstOds']))
 			  ));
 
-			$item = new PodioItem(array(
-			  'app' => new PodioApp($app_id), 
-			  'fields' => $fields
-			  ));
+            $item = new PodioItem(array(
+                'app' => new PodioApp($app_id),
+                'fields' => $fields
+            ));
 
-			// Save the new item
-			$item->save();
-			$idColombia=1551;
-			$nameColombia="COLOMBIA";
-			$curl = curl_init();
-			// Set some options - we are passing in a useragent too here
-			curl_setopt_array($curl, array(
-			    CURLOPT_RETURNTRANSFER => 1,
-			    CURLOPT_URL => 'https://auth.aiesec.org/users/sign_in',
-			    CURLOPT_USERAGENT => 'Codular Sample cURL Request'
-			    ));		
-			$result = curl_exec($curl);		
-			curl_close($curl);
+            // Save the new item
+            $add = $item->save();
+            var_dump($add);
+            $idColombia = 1551;
+            $nameColombia = "COLOMBIA";
+            $curl = curl_init();
+            // Set some options - we are passing in a useragent too here
+            curl_setopt_array($curl, array(
+                CURLOPT_RETURNTRANSFER => 1,
+                CURLOPT_URL => 'https://auth.aiesec.org/users/sign_in',
+                CURLOPT_USERAGENT => 'Codular Sample cURL Request'
+            ));
+            $result = curl_exec($curl);
+            curl_close($curl);
+
             preg_match('/<meta name="csrf-token" content="(.*)" \/>/', $result, $matches);
-            $gis_token = substr(explode(' ',$matches[1])[0],0,-1);
-			
-			$fields = array(
-		    'authenticity_token' => htmlspecialchars($gis_token),
-		    'user[email]' => htmlspecialchars($Json['txtmail']),
-		    'user[first_name]' => htmlspecialchars($Json['txtFirstName']),
-		    'user[last_name]' => htmlspecialchars($Json['txtLastName']),
-		    'user[password]' => htmlspecialchars($Json['txtPassword']),
-		    'user[phone]' => htmlspecialchars($Json['txtMobil']),
-		    'user[country]' => $nameColombia,  
-		    'user[mc]' => $idColombia, 
-		    'user[lc_input]' => htmlspecialchars($Json['valUniversidad']),
-		    'user[lc]' => htmlspecialchars($Json['valUniversidad']),
-		    'commit' => 'REGISTER'
-		    );
+            $gis_token = substr(explode(' ', $matches[1])[0], 0, -1);
 
-			$fields_string = "";
-			foreach($fields as $key=>$value) { $fields_string .= $key.'='.urlencode($value).'&'; }
-			rtrim($fields_string, '&');
-			$innerHTML = "";
+            $fields = array(
+                'authenticity_token' => htmlspecialchars($gis_token),
+                'user[email]' => htmlspecialchars($Json['txtmail']),
+                'user[first_name]' => htmlspecialchars($Json['txtFirstName']),
+                'user[last_name]' => htmlspecialchars($Json['txtLastName']),
+                'user[password]' => htmlspecialchars($Json['txtPassword']),
+                'user[phone]' => htmlspecialchars($Json['txtMobil']),
+                'user[country]' => $nameColombia,
+                'user[mc]' => $idColombia,
+                'user[lc_input]' => htmlspecialchars($Json['valUniversidad']),
+                'user[lc]' => htmlspecialchars($Json['valUniversidad']),
+                'commit' => 'REGISTER'
+            );
 
-			$url = "https://auth.aiesec.org/users";
-			$ch2 = curl_init();
-			curl_setopt($ch2, CURLOPT_URL, $url);
-			curl_setopt($ch2, CURLOPT_POST, count($fields));
-			curl_setopt($ch2, CURLOPT_POSTFIELDS, $fields_string);
 
-			curl_setopt($ch2, CURLOPT_RETURNTRANSFER, TRUE);
-			// give cURL the SSL Cert for Salesforce
-			curl_setopt($ch2, CURLOPT_SSL_VERIFYPEER, false); 
+            $fields_string = "";
+            foreach ($fields as $key => $value) {
+                $fields_string .= $key . '=' . urlencode($value) . '&';
+            }
+            rtrim($fields_string, '&');
+            $innerHTML = "";
 
-			$result = curl_exec($ch2);
+            $url = "https://auth.aiesec.org/users";
+            $ch2 = curl_init();
+            curl_setopt($ch2, CURLOPT_URL, $url);
+            curl_setopt($ch2, CURLOPT_POST, count($fields));
+            curl_setopt($ch2, CURLOPT_POSTFIELDS, $fields_string);
 
-			//curl_errors($ch2);
-			//close connection
-			curl_close($ch2);
-			//echo $result;
-			/*libxml_use_internal_errors(true);
-			$doc = new DOMDocument();
-			$doc->loadHTML($result);    
-			libxml_clear_errors();
-			$selector = new DOMXPath($doc);
+            curl_setopt($ch2, CURLOPT_RETURNTRANSFER, TRUE);
+            // give cURL the SSL Cert for Salesforce
+            curl_setopt($ch2, CURLOPT_SSL_VERIFYPEER, false);
 
-			$result = $selector->query('//div[@id="error_explanation"]');
-			echo "LLego";
-			/*if $children = $result->item(0)->childNodes;
-			
-			(is_iterable($children))
-			{
-			    foreach ($children as $child) {
-			        $tmp_doc = new DOMDocument();
-			        $tmp_doc->appendChild($tmp_doc->importNode($child,true));  
-			        $innerHTML .= strip_tags($tmp_doc->saveHTML());
-			        //$innerHTML.add($tmp_doc->saveHTML());
-			    }
-			}
+            $result = curl_exec($ch2);
 
-			$innerHTML = preg_replace('~[\r\n]+~', '', $innerHTML);
-			$innerHTML = str_replace(array('"', "'"), '', $innerHTML);*/
+            //curl_errors($ch2);
+            //close connection
+            curl_close($ch2);
+            //echo $result;
+            /*libxml_use_internal_errors(true);
+            $doc = new DOMDocument();
+            $doc->loadHTML($result);
+            libxml_clear_errors();
+            $selector = new DOMXPath($doc);
 
-		    //echo json_encode($matches);
-		    echo  json_encode($result)  ;
-	    }catch (Exception $e) {
-		    echo json_encode( array(
-			    "result" => false,
-			    "message" => $e->getMessage(),
-				));
-		}
+            $result = $selector->query('//div[@id="error_explanation"]');
+            echo "LLego";
+            /*if $children = $result->item(0)->childNodes;
 
-	}
+            (is_iterable($children))
+            {
+                foreach ($children as $child) {
+                    $tmp_doc = new DOMDocument();
+                    $tmp_doc->appendChild($tmp_doc->importNode($child,true));
+                    $innerHTML .= strip_tags($tmp_doc->saveHTML());
+                    //$innerHTML.add($tmp_doc->saveHTML());
+                }
+            }
 
-	public function actionUniversidadesColombia(){
+            $innerHTML = preg_replace('~[\r\n]+~', '', $innerHTML);
+            $innerHTML = str_replace(array('"', "'"), '', $innerHTML);*/
+
+            //echo json_encode($matches);
+            echo json_encode($result);
+        } catch (Exception $e) {
+            echo json_encode(array(
+                "result" => false,
+                "message" => $e->getMessage(),
+            ));
+        }
+
+    }
+
+
+    public function actionUniversidadesColombia(){
 		$data = file_get_contents("https://gis-api.aiesec.org/v2/lists/mcs_alignments.json");
 		$arrayData=json_decode($data);
 		$colombia=[];
