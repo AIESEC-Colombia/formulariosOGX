@@ -58,10 +58,6 @@ class VoluntarioGlobalController extends Controller
 			Podio::authenticate_with_app($app_id, $app_token);
 			$Comite=new Comite();
 
-			var_dump($Json);
-			exit;
-
-
 			$fields = new PodioItemFieldCollection(array(
 			  new PodioTextItemField(array("external_id" => "titulo", "values" => $Json['txtFirstName'] )),
 			  new PodioTextItemField(array("external_id" => "lastname", "values" => $Json['txtLastName'])),
@@ -71,7 +67,7 @@ class VoluntarioGlobalController extends Controller
 			  new PodioCategoryItemField(array("external_id" => "iduniversity", "values" => $Json['valUniversidad'])),
 			  new PodioCategoryItemField(array("external_id" => "university", "values" => $Json['nombreUniversidad'])),
 			  new PodioCategoryItemField(array("external_id" => "howmet-2", "values" => (int) $Json['lstConocioOrganizacion'])),
-			  new PodioCategoryItemField(array("external_id" => "fecha-de-viaje", "values" => (int) $Json['lstFechaViaje'])),
+			  #new PodioCategoryItemField(array("external_id" => "fecha-de-viaje", "values" => (int) $Json['lstFechaViaje'])),
 		 	  new PodioCategoryItemField(array("external_id" => "preferencia-de-contacto", "values" => (int) $Json['lstContactoPreferencia'])),
 
 			  new PodioCategoryItemField(array("external_id" => "lc", "values" => $Comite->getValorPodio((int) $Json['valUniversidad'])))
