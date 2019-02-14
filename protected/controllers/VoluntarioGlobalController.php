@@ -95,9 +95,6 @@ class VoluntarioGlobalController extends Controller
 			preg_match('/<meta name="csrf-token" content="(.*)" \/>/', $result, $matches);
 			$gis_token = substr(explode(' ',$matches[1])[0],0,-1);
 
-			var_dump($gis_token);
-			exit;
-
 			$fields = array(
 		    'authenticity_token' => htmlspecialchars($gis_token),
 		    'user[email]' => htmlspecialchars($Json['txtmail']),

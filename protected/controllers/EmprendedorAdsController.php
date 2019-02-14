@@ -96,9 +96,9 @@ class EmprendedorAdsController extends Controller
 		    CURLOPT_USERAGENT => 'Codular Sample cURL Request'
 		    ));		
 		$result = curl_exec($curl);		
-		curl_close($curl);		
-		preg_match('/<meta name="csrf-token" content="(.*)" \/>/', $result, $matches);
-		$gis_token = $matches[1];
+		curl_close($curl);
+            preg_match('/<meta name="csrf-token" content="(.*)" \/>/', $result, $matches);
+            $gis_token = substr(explode(' ',$matches[1])[0],0,-1);
 		
 		$fields = array(
 	    'authenticity_token' => htmlspecialchars($gis_token),
