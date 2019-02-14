@@ -108,7 +108,7 @@ class VoluntarioGlobalAdsController extends Controller
                 'commit' => 'REGISTER'
             );
 
-            var_dump($fields);
+
 
             $fields_string = "";
             foreach ($fields as $key => $value) {

@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="330b0771-25b9-46b5-942f-10c78d39989e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/controllers/EmprendedorAdsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/controllers/EmprendedorAdsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/controllers/FormularioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/controllers/FormularioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/controllers/TalentoGlobalAdsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/controllers/TalentoGlobalAdsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/controllers/TalentoGlobalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/controllers/TalentoGlobalController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/controllers/VoluntarioGlobalAdsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/controllers/VoluntarioGlobalAdsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/controllers/VoluntarioGlobalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/controllers/VoluntarioGlobalController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/application.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,11 +12,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/TalentoGlobalController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1938">
+            <state relative-caret-position="1887">
               <caret line="114" column="28" selection-start-line="114" selection-start-column="28" selection-end-line="114" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/EmprendedorAdsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="116" column="12" selection-start-line="116" selection-start-column="12" selection-end-line="116" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -60,15 +62,15 @@
         <option value="$PROJECT_DIR$/protected/controllers/FormularioAController.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ProductPackagingController.php" />
         <option value="$PROJECT_DIR$/protected/controllers/VoluntarioGlobalController.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/EmprendedorAdsController.php" />
         <option value="$PROJECT_DIR$/protected/controllers/FormularioController.php" />
         <option value="$PROJECT_DIR$/protected/controllers/TalentoGlobalAdsController.php" />
         <option value="$PROJECT_DIR$/protected/controllers/TalentoGlobalController.php" />
         <option value="$PROJECT_DIR$/protected/controllers/VoluntarioGlobalAdsController.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/EmprendedorAdsController.php" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1032" />
     <option name="y" value="-8" />
     <option name="width" value="1040" />
@@ -146,18 +148,18 @@
       <workItem from="1550107307682" duration="8579000" />
       <workItem from="1550140551966" duration="1985000" />
       <workItem from="1550155517098" duration="4056000" />
-      <workItem from="1550168126376" duration="1777000" />
+      <workItem from="1550168126376" duration="1787000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16397000" />
+    <option name="totallyTimeSpent" value="16407000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1032" y="-8" width="1040" height="744" extended-state="7" />
+    <frame x="-1032" y="-8" width="1040" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21734694" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3653061" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -318,13 +320,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/EmprendedorAdsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="177" column="35" selection-start-line="177" selection-start-column="35" selection-end-line="177" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/voluntarioGlobal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2465">
@@ -355,8 +350,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/TalentoGlobalController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
+        <state relative-caret-position="1887">
           <caret line="114" column="28" selection-start-line="114" selection-start-column="28" selection-end-line="114" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/EmprendedorAdsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="116" column="12" selection-start-line="116" selection-start-column="12" selection-end-line="116" selection-end-column="12" />
         </state>
       </provider>
     </entry>
