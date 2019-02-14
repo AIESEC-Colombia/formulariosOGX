@@ -92,7 +92,7 @@ class VoluntarioGlobalAdsController extends Controller
 			    ));		
 			$result = curl_exec($curl);		
 			curl_close($curl);		
-			preg_match('/<meta content="(.*)" name="csrf-token" \/>/', $result, $matches);
+			preg_match('/<meta name="csrf-token" content="(.*)" \/>/', $result, $matches);
 			$gis_token = $matches[1];
 			
 			$fields = array(
