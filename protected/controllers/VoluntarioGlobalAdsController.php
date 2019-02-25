@@ -108,6 +108,8 @@ class VoluntarioGlobalAdsController extends Controller
                 'commit' => 'REGISTER'
             );
 
+
+
             $fields_string = "";
             foreach ($fields as $key => $value) {
                 $fields_string .= $key . '=' . urlencode($value) . '&';

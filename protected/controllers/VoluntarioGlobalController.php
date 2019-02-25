@@ -79,7 +79,6 @@ class VoluntarioGlobalController extends Controller
 
             // Save the new item
             $add = $item->save();
-            var_dump($add);
             $idColombia = 1551;
             $nameColombia = "COLOMBIA";
             $curl = curl_init();
@@ -108,6 +107,8 @@ class VoluntarioGlobalController extends Controller
                 'user[lc]' => htmlspecialchars($Json['valUniversidad']),
                 'commit' => 'REGISTER'
             );
+
+
 
 
             $fields_string = "";
