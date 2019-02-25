@@ -227,7 +227,6 @@
             <option value="" disabled selected>Como conocia la organización</option>
             <option value="3">Google</option>
             <option value="4">Medios de comunicación(TV,Radio)</option>
-            <option value="5">Evento</option>
             <option value="6">Redes sociales de un amigo</option>
             <option value="8">Página Web</option>
             <option value="9">Stand/Activación</option>
