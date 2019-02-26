@@ -77,8 +77,8 @@
            <option value="3">Google</option>
            <option value="4">Medios de comunicación (Periódicos, Radio, TV, Artículos...)</option>
            <option value="5">Evento, foro o conferencia</option>
-           <option value="6">Un amigo o conocido</option>    
-           <option value="8">Mprende</option>         
+           <option value="6">Un amigo o conocido</option>
+           <option value="16">Youth Speak</option>
          </select>
          <label>¿Cómo conoció AIESEC?*</label>
      </div>
