@@ -221,6 +221,20 @@
          </select>
          <label>¿Semestre?*</label>
      </div>
+     <div class="input-field col s12">
+        <i class="material-icons prefix">email</i>
+        <select class="listas" id="lstConocioOrganizacion">
+        <option value="" disabled selected>Como conocia la organización</option>
+        <option value="3">Google</option>
+        <option value="15">Página Web</option>
+        <option value="10">Stand/Activación</option>
+        <option value="11">Volantes o Publicidad impresa</option>
+        <option value="12">Influencers</option>
+        <option value="13">Instituto</option>
+        <option value="14">Groupon</option>
+        </select>
+        <label>¿Cómo conoció AIESEC?*</label>
+     </div>
      <div class="input-field col s12">          
         <input type="checkbox" id="rbAceptoTerminos" />
         <label for="rbAceptoTerminos">Estoy de acuerdo con los <a id="btnTerminosCondiciones"> términos y condiciones de privacidad </a></label>
