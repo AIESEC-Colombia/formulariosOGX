@@ -76,7 +76,6 @@
           <option value="3">Google</option>
           <option value="11">Facebook</option>
           <option value="12">Instagram</option>
-          <option value="6">Redes sociales de un amigo</option>
           <option value="14">WhatsApp</option>
           <option value="15">Youtubers</option>
           <option value="16">Página Web</option>
@@ -85,6 +84,9 @@
           <option value="19">Influencers</option>
           <option value="20">Instituto</option>
           <option value="21">Groupon</option>
+          <option value="23">Comunidad KOF</option>
+          <option value="24">Referido de un AIESECo</option>
+          <option value="25">Un amigo que ya tomó un intercambio</option>
         </select>
       <label>¿Cómo conoció AIESEC?*</label>
     </div>
