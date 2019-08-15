@@ -45,10 +45,7 @@
     		} else if(lstConocioOrganizacion.val()==null){
     			swal("Seleccione como conocio la organización");
     			return false;
-    		}else if(txtCupon.val()==""){
-                        swal("ingrese el codigo que de referido");
-                        return false;
-                }else if(lstFechaViaje.val()==null){
+    		}else if(lstFechaViaje.val()==null){
                         swal("Seleccione la fecha del viaje");
                         return false;
                 }else if(lstContactoPreferencia.val()==null){

@@ -36,10 +36,7 @@
     		else if(txtmail.val()==""){
     			swal("Ingrese su email");
     			return false;
-    		}else if(txtCupon.val()==""){
-                        swal("ingrese el codigo que de referido");
-                        return false;
-                }else if(lstUniversidad.val()==null){
+    		}else if(lstUniversidad.val()==null){
     			swal("Seleccione su universidad");
     			return false;
     		} else if(txtPassword.val()==""){
