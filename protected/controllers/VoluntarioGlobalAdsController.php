@@ -67,9 +67,9 @@ class VoluntarioGlobalAdsController extends Controller
                 new PodioCategoryItemField(array("external_id" => "iduniversity", "values" => $Json['valUniversidad'])),
                 new PodioCategoryItemField(array("external_id" => "university", "values" => $Json['nombreUniversidad'])),
                 new PodioCategoryItemField(array("external_id" => "howmet-2", "values" => (int)$Json['lstConocioOrganizacion'])),
+                new PodioCategoryItemField(array("external_id" => "Cupon", "values" => (int)$Json['lstCupon'])),
                 new PodioCategoryItemField(array("external_id" => "fecha-de-viaje", "values" => (int)$Json['lstFechaViaje'])),
                 new PodioCategoryItemField(array("external_id" => "preferencia-de-contacto", "values" => (int)$Json['lstContactoPreferencia'])),
-
                 new PodioCategoryItemField(array("external_id" => "lc", "values" => $Comite->getValorPodio((int)$Json['valUniversidad'])))
             ));
 
@@ -103,6 +103,7 @@ class VoluntarioGlobalAdsController extends Controller
                 'user[phone]' => htmlspecialchars($Json['txtMobil']),
                 'user[country]' => $nameColombia,
                 'user[mc]' => $idColombia,
+                'user[Cupon]' => htmlspecialchars($Json['txtCupon']),
                 'user[lc_input]' => htmlspecialchars($Json['valUniversidad']),
                 'user[lc]' => htmlspecialchars($Json['valUniversidad']),
                 'commit' => 'REGISTER'

@@ -57,7 +57,7 @@
            <option value="" disabled selected>Seleccione una universidad</option>
          </select>
          <label>Universidad*</label>
-     </div>
+      </div>
       <div class="input-field col s12">
         <i class="material-icons prefix">vpn_key</i>
         <input id="txtPassword" type="password" class="validate">
@@ -69,8 +69,8 @@
         <label for="txtSecondPassword">Repita la Clave*</label>
       </div>
 
-      <div class="input-field col s12">
-        <i class="material-icons prefix">email</i>
+    <div class="input-field col s12">
+      <i class="material-icons prefix">email</i>
         <select class="listas" id="lstConocioOrganizacion">
           <option value="" disabled selected>Como conocia la organización</option>
           <option value="3">Google</option>
@@ -89,7 +89,7 @@
           <option value="25">Un amigo que ya tomó un intercambio</option>
         </select>
       <label>¿Cómo conoció AIESEC?*</label>
-    </div>
+     </div>
 
      <div class="input-field col s12">
         <i class="material-icons prefix">flight_land</i>
@@ -101,8 +101,12 @@
          </select>
          <label>¿Cuando crees que sería la fecha de viaje?*</label>
      </div>
-
      <div class="input-field col s12">
+        <i class="material-icons prefix">Cupon_camp</i>
+         <input id="txtCupon" type="password" class="validate">
+         <label for="txtCupon">Tienes codigo de referido escribelo aqu�.</label>
+      </div>
+      <div class="input-field col s12">
         <i class="material-icons prefix">group</i>
          <select class="listas" id="lstContactoPreferencia">
            <option value="" disabled selected>Preferencia de Contacto?</option>
@@ -112,8 +116,6 @@
          </select>
          <label>¿Preferencia de Contacto?*</label>
      </div>
-
-
 
      <div class="input-field col s12">
         <input type="checkbox" id="rbAceptoTerminos" />
@@ -125,7 +127,7 @@
     </div>
 
   </div>
-     <style type="text/css">
+  <style type="text/css">
       @font-face { font-family: "Lato-Light";
                 src: url('<?php echo Yii::app()->request->baseUrl; ?>/assets/Lato-Light.ttf');
                  }
@@ -142,7 +144,7 @@
       .material-icons{
         color: #f85a40;
       }
-    </style>
+  </style>
    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/voluntarioGlobalAds.js"></script>
   </body>
 </html>
