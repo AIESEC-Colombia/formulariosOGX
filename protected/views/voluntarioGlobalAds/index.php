@@ -103,7 +103,7 @@
      </div>
      <div class="input-field col s12">
         <i class="material-icons prefix">Cupon</i>
-         <input id="txtCupon" type="texto" class="validate">
+         <input id="txtCupon" type="text" class="validate">
          <label for="txtCupon">Tienes codigo de referido escribelo aquí.</label>
       </div>
       <div class="input-field col s12">
