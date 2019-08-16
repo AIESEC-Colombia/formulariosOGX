@@ -13,7 +13,7 @@
     		var txtPassword=$("#txtPassword");
     		var txtSecondPassword=$("#txtSecondPassword");
     		var lstConocioOrganizacion=$("#lstConocioOrganizacion");
-                var txtCupon=("#txtCupon");
+                var txtCupon=$("#txtCupon");
                 var lstFechaViaje = $("#lstFechaViaje");
                 var lstContactoPreferencia = $("#lstContactoPreferencia");
            
