@@ -102,7 +102,7 @@
          <label>¿Cuando crees que sería la fecha de viaje?*</label>
      </div>
      <div class="input-field col s12">
-        <i class="material-icons prefix">Cupon_camp</i>
+        <i class="material-icons prefix">Cuponp</i>
          <input id="txtCupon" type="password" class="validate">
          <label for="txtCupon">Tienes codigo de referido escribelo aqu�.</label>
       </div>
