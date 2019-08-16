@@ -268,3 +268,17 @@ Stack trace:
 REQUEST_URI=/yii/formulariosOGX/index.php?r=voluntarioGlobal/UniversidadesColombia
 in C:\xampp\htdocs\yii\formulariosOGX\protected\controllers\VoluntarioGlobalController.php (173)
 in C:\xampp\htdocs\yii\formulariosOGX\index.php (13)
+2019/08/16 14:58:52 [error] [exception.Error] Error: Call to undefined function dd() in C:\xampp\htdocs\desarrolloLaravel\formulariosOGX\protected\controllers\VoluntarioGlobalController.php:52
+Stack trace:
+#0 C:\xampp\htdocs\desarrolloLaravel\yii\framework\web\actions\CInlineAction.php(49): VoluntarioGlobalController->actionInserExpa()
+#1 C:\xampp\htdocs\desarrolloLaravel\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\desarrolloLaravel\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\desarrolloLaravel\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\xampp\htdocs\desarrolloLaravel\yii\framework\web\CWebApplication.php(282): CController->run('InserExpa')
+#5 C:\xampp\htdocs\desarrolloLaravel\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('voluntarioGloba...')
+#6 C:\xampp\htdocs\desarrolloLaravel\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\desarrolloLaravel\formulariosOGX\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/desarrolloLaravel/formulariosOGX/index.php?r=voluntarioGlobal/InserExpa
+HTTP_REFERER=http://localhost/desarrolloLaravel/formulariosOGX/index.php?r=voluntarioGlobal
+---
