@@ -62,14 +62,11 @@ class VoluntarioGlobalAdsController extends Controller
                 new PodioTextItemField(array("external_id" => "titulo", "values" => $Json['txtFirstName'])),
                 new PodioTextItemField(array("external_id" => "lastname", "values" => $Json['txtLastName'])),
                 new PodioTextItemField(array("external_id" => "phone-2", "values" => $Json['txtPhone'])),
-                new PodioTextItemField(array("external_id" => "cellphone-2", "values" => $Json['txtMobil'])),
                 new PodioCategoryItemField(array("external_id" => "email-2", "values" => $Json['txtmail'])),
                 new PodioCategoryItemField(array("external_id" => "iduniversity", "values" => $Json['valUniversidad'])),
                 new PodioCategoryItemField(array("external_id" => "university", "values" => $Json['nombreUniversidad'])),
                 new PodioCategoryItemField(array("external_id" => "howmet-2", "values" => (int)$Json['lstConocioOrganizacion'])),
                 new PodioTextItemField(array("external_id" => "cupon-2", "values" => $Json['txtCupon'])),
-                new PodioCategoryItemField(array("external_id" => "fecha-de-viaje", "values" => (int)$Json['lstFechaViaje'])),
-                new PodioCategoryItemField(array("external_id" => "preferencia-de-contacto", "values" => (int)$Json['lstContactoPreferencia'])),
                 new PodioCategoryItemField(array("external_id" => "lc", "values" => $Comite->getValorPodio((int)$Json['valUniversidad'])))
             ));
 
@@ -100,7 +97,7 @@ class VoluntarioGlobalAdsController extends Controller
                 'user[first_name]' => htmlspecialchars($Json['txtFirstName']),
                 'user[last_name]' => htmlspecialchars($Json['txtLastName']),
                 'user[password]' => htmlspecialchars($Json['txtPassword']),
-                'user[phone]' => htmlspecialchars($Json['txtMobil']),
+                'user[phone]' => htmlspecialchars($Json['txtPhone']),
                 'user[country]' => $nameColombia,
                 'user[mc]' => $idColombia,
                 'user[Cupon]' => htmlspecialchars($Json['txtCupon']),

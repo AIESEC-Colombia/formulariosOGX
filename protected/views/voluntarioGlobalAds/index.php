@@ -42,11 +42,6 @@
          <label for="txtPhone">Teléfono*</label>
       </div>
       <div class="input-field col s12">
-         <i class="material-icons prefix">settings_cell</i>
-         <input id="txtMobil" type="text" class="validate">
-         <label for="txtMobil">Celular*</label>
-      </div>
-      <div class="input-field col s12">
         <i class="material-icons prefix">email</i>
         <input id="txtmail" type="email" class="validate">
         <label for="email">Email*</label>
@@ -68,7 +63,7 @@
         <input id="txtSecondPassword" type="password" class="validate">
         <label for="txtSecondPassword">Repita la Clave*</label>
       </div>
-
+ t
     <div class="input-field col s12">
       <i class="material-icons prefix">email</i>
         <select class="listas" id="lstConocioOrganizacion">
@@ -77,46 +72,28 @@
           <option value="11">Facebook</option>
           <option value="12">Instagram</option>
           <option value="14">WhatsApp</option>
-          <option value="15">Youtubers</option>
+          <option value="26">Linkedin</option>
+          <option value="27">Twitter</option>
+          <option value="28">Correo</option>
+          <option value="15">Un amigo o conocido</option>
           <option value="16">Página Web</option>
           <option value="17">Stand/Activación</option>
-          <option value="18">Volantes o Publicidad impresa</option>
-          <option value="19">Influencers</option>
+          <option value="18">Evento, foro o conferencia</option>
+          <option value="10">Youth Speak</option>
           <option value="20">Instituto</option>
-          <option value="21">Groupon</option>
-          <option value="23">Comunidad KOF</option>
+          <option value="4">Medios de comunicaci�n(Peri�dicos, Radio, TV, Art�culos...)</option>
           <option value="24">Referido de un AIESECo</option>
           <option value="25">Un amigo que ya tomó un intercambio</option>
+          <option value="29">Otro</option>
         </select>
       <label>¿Cómo conoció AIESEC?*</label>
      </div>
 
      <div class="input-field col s12">
-        <i class="material-icons prefix">flight_land</i>
-         <select class="listas" id="lstFechaViaje">
-           <option value="" disabled selected>Cuando crees que sería la fecha de viaje?</option>
-           <option value="1">De hoy a 6 meses</option>
-           <option value="2">De 6 meses un año</option>
-           <option value="3">Sin fecha fija pero quiero conocer más</option>
-         </select>
-         <label>¿Cuando crees que sería la fecha de viaje?*</label>
-     </div>
-     <div class="input-field col s12">
         <i class="material-icons prefix">Cupon</i>
          <input id="txtCupon" type="text" class="validate">
          <label for="txtCupon">Tienes codigo de referido escribelo aquí.</label>
       </div>
-      <div class="input-field col s12">
-        <i class="material-icons prefix">group</i>
-         <select class="listas" id="lstContactoPreferencia">
-           <option value="" disabled selected>Preferencia de Contacto?</option>
-           <option value="1">Correo Electrónico</option>
-           <option value="2">Llamada</option>
-           <option value="3">Whatsapp</option>
-         </select>
-         <label>¿Preferencia de Contacto?*</label>
-     </div>
-
      <div class="input-field col s12">
         <input type="checkbox" id="rbAceptoTerminos" />
         <label for="rbAceptoTerminos">Estoy de acuerdo con los <a id="btnTerminosCondiciones"> términos y condiciones de privacidad </a></label>

@@ -7,14 +7,12 @@
     		var txtFirstName=$("#txtFirstName");
     		var txtLastName=$("#txtLastName");
     		var txtPhone=$("#txtPhone");
-    		var txtMobil=$("#txtMobil");
     		var txtmail=$("#txtmail");
     		var lstUniversidad=$("#lstUniversidad");
     		var txtPassword=$("#txtPassword");
     		var txtSecondPassword=$("#txtSecondPassword");
                 var lstConocioOrganizacion=$("#lstConocioOrganizacion");
                 var txtCupon=$("#txtCupon");
-                var lstFechaViaje = $("#lstFechaViaje");
                 var lstContactoPreferencia = $("#lstContactoPreferencia");
             
 
@@ -28,11 +26,7 @@
     		else if(txtPhone.val()==""){
     			swal("Ingrese su numero de telefono");
     			return false;
-    		} 
-    		else if(txtMobil.val()==""){
-    			swal("Ingrese su telefono celular");
-    			return false;
-    		} 
+    		}  
     		else if(txtmail.val()==""){
     			swal("Ingrese su email");
     			return false;
@@ -50,13 +44,7 @@
                 else if(lstConocioOrganizacion.val()==null){
     			swal("Seleccione como conocio la organización");
     			return false;
-    		}else if(lstFechaViaje.val()==null){
-                        swal("Seleccione la fecha del viaje");
-                        return false;
-                }else if(lstContactoPreferencia.val()==null){
-                        swal("Seleccione como desea ser contactado");
-                        return false;
-                }else if(txtPassword.val()!=txtSecondPassword.val()){
+    		}else if(txtPassword.val()!=txtSecondPassword.val()){
     			swal("las contraseñas no coinciden");
     			return false;
                 }else if(!($("#rbAceptoTerminos").is(":checked"))){
@@ -126,7 +114,6 @@
                     data["txtFirstName"]=$("#txtFirstName").val();
                     data["txtLastName"]=$("#txtLastName").val();
                     data["txtPhone"]=$("#txtPhone").val();
-                    data["txtMobil"]=$("#txtMobil").val();
                     data["txtmail"]=$("#txtmail").val();
                     data["valUniversidad"]=$("#lstUniversidad").val();
                     data["nombreUniversidad"]=universidadNombre;
@@ -134,8 +121,6 @@
                     data["txtSecondPassword"]=$("#txtSecondPassword").val();
                     data["lstConocioOrganizacion"]=$("#lstConocioOrganizacion").val();
                     data["txtCupon"]=$("#txtCupon").val();
-                    data["lstFechaViaje"]=$("#lstFechaViaje").val();
-                    data["lstContactoPreferencia"]=$("#lstContactoPreferencia").val();
                    
                     
     				ajax.ajaxSinJson(data,url,saveEndAjax,errorEnd);
