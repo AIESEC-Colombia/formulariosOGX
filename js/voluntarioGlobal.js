@@ -7,7 +7,6 @@
     		var txtFirstName=$("#txtFirstName");
     		var txtLastName=$("#txtLastName");
     		var txtPhone=$("#txtPhone");
-    		var txtMobil=$("#txtMobil");
     		var txtmail=$("#txtmail");
     		var lstUniversidad=$("#lstUniversidad");
     		var txtPassword=$("#txtPassword");
@@ -26,9 +25,6 @@
     			return false;
     		}else if(txtPhone.val()==""){
     			swal("Ingrese su numero de telefono");
-    			return false;
-    		} else if(txtMobil.val()==""){
-    			swal("Ingrese su telefono celular");
     			return false;
     		} else if(txtmail.val()==""){
     			swal("Ingrese su email");
@@ -120,7 +116,6 @@
                     data["txtFirstName"]=$("#txtFirstName").val();
                     data["txtLastName"]=$("#txtLastName").val();
                     data["txtPhone"]=$("#txtPhone").val();
-                    data["txtMobil"]=$("#txtMobil").val();
                     data["txtmail"]=$("#txtmail").val();
                     data["valUniversidad"]=$("#lstUniversidad").val();
                     data["nombreUniversidad"]=universidadNombre;

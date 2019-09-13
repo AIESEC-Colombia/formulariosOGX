@@ -42,11 +42,6 @@
          <label for="txtPhone">Tel茅fono*</label>
       </div>
       <div class="input-field col s12">
-         <i class="material-icons prefix">settings_cell</i>
-         <input id="txtMobil" type="text" class="validate">
-         <label for="txtMobil">Celular*</label>
-      </div>
-      <div class="input-field col s12">
         <i class="material-icons prefix">email</i>
         <input id="txtmail" type="email" class="validate">
         <label for="email">Email*</label>
@@ -72,14 +67,23 @@
         <i class="material-icons prefix">email</i>
          <select class="listas" id="lstConocioOrganizacion">
            <option value="" disabled selected>Como conocia la organizaci贸n</option>
-           <option value="1">Universidad</option>
-           <option value="2">Redes sociales</option>
            <option value="3">Google</option>
-           <option value="4">Medios de comunicaci贸n (Peri贸dicos, Radio, TV, Art铆culos...)</option>
-           <option value="5">Youth Speak</option>
-           <option value="23">Comunidad KOF</option>
-           <option value="24">Referido de un AIESECo</option>
-           <option value="25">Un amigo que ya tom贸 un intercambio</option>
+          <option value="11">Facebook</option>
+          <option value="12">Instagram</option>
+          <option value="14">WhatsApp</option>
+          <option value="26">Linkedin</option>
+          <option value="27">Twitter</option>
+          <option value="28">Correo</option>
+          <option value="15">Un amigo o conocido</option>
+          <option value="16">P谩gina Web</option>
+          <option value="17">Stand/Activaci贸n</option>
+          <option value="18">Evento, foro o conferencia</option>
+          <option value="10">Youth Speak</option>
+          <option value="20">Instituto</option>
+          <option value="4">Medios de comunicaci髇(Peri骴icos, Radio, TV, Art韈ulos...)</option>
+          <option value="24">Referido de un AIESECo</option>
+          <option value="25">Un amigo que ya tom贸 un intercambio</option>
+          <option value="29">Otro</option>
          </select>
          <label>驴C贸mo conoci贸 AIESEC?*</label>
      </div>
