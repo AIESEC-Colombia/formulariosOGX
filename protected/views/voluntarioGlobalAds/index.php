@@ -81,7 +81,7 @@
           <option value="18">Evento, foro o conferencia</option>
           <option value="10">Youth Speak</option>
           <option value="20">Instituto</option>
-          <option value="4">Medios de comunicación(Periódicos, Radio, TV, Artículos...)</option>
+          <option value="4">Medios de comunicaciÃ³n(PeriÃ³dicos, Radio, TV, Artículos...)</option>
           <option value="24">Referido de un AIESECo</option>
           <option value="25">Un amigo que ya tomÃ³ un intercambio</option>
           <option value="29">Otro</option>

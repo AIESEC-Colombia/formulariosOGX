@@ -13,7 +13,6 @@
     		var txtSecondPassword=$("#txtSecondPassword");
                 var lstConocioOrganizacion=$("#lstConocioOrganizacion");
                 var txtCupon=$("#txtCupon");
-                var lstContactoPreferencia = $("#lstContactoPreferencia");
             
 
     		if(txtFirstName.val()==""){

@@ -41,12 +41,6 @@
     		} else if(lstConocioOrganizacion.val()==null){
     			swal("Seleccione como conocio la organización");
     			return false;
-    		}else if(lstFechaViaje.val()==null){
-                        swal("Seleccione la fecha del viaje");
-                        return false;
-                }else if(lstContactoPreferencia.val()==null){
-                        swal("Seleccione como desea ser contactado");
-                        return false;
                 }else if(txtPassword.val()!=txtSecondPassword.val()){
     			swal("las contraseñas no coinciden");
     			return false;
@@ -123,8 +117,6 @@
                     data["txtSecondPassword"]=$("#txtSecondPassword").val();
                     data["lstConocioOrganizacion"]=$("#lstConocioOrganizacion").val();
                     data["txtCupon"]=$("#txtCupon").val();
-                    data["lstFechaViaje"]=$("#lstFechaViaje").val();
-                    data["lstContactoPreferencia"]=$("#lstContactoPreferencia").val();
 
     				ajax.ajaxSinJson(data,url,saveEndAjax,errorEnd);
                     $.blockUI({ 

@@ -67,7 +67,7 @@
         <i class="material-icons prefix">email</i>
          <select class="listas" id="lstConocioOrganizacion">
            <option value="" disabled selected>Como conocia la organización</option>
-           <option value="3">Google</option>
+          <option value="3">Google</option>
           <option value="11">Facebook</option>
           <option value="12">Instagram</option>
           <option value="14">WhatsApp</option>
@@ -80,42 +80,18 @@
           <option value="18">Evento, foro o conferencia</option>
           <option value="10">Youth Speak</option>
           <option value="20">Instituto</option>
-          <option value="4">Medios de comunicaci�n(Peri�dicos, Radio, TV, Art�culos...)</option>
+          <option value="4">Medios de comunicación(Periódicos, Radio, TV, Art�culos...)</option>
           <option value="24">Referido de un AIESECo</option>
           <option value="25">Un amigo que ya tomó un intercambio</option>
           <option value="29">Otro</option>
-         </select>
+        </select>
          <label>¿Cómo conoció AIESEC?*</label>
-     </div>
-
-     <div class="input-field col s12">
-        <i class="material-icons prefix">flight_land</i>
-         <select class="listas" id="lstFechaViaje">
-           <option value="" disabled selected>Cuando crees que sería la fecha de viaje?</option>
-           <option value="1">De hoy a 6 meses</option>
-           <option value="2">De 6 meses un año</option>
-           <option value="3">Sin fecha fija pero quiero conocer más</option>
-         </select>
-         <label>¿Cuando crees que sería la fecha de viaje?*</label>
      </div>
       <div class="input-field col s12">
         <i class="material-icons prefix">Cupon</i>
          <input id="txtCupon" type="text" class="validate">
          <label for="txtCupon">Tienes codigo de referido escribelo aquí.</label>
       </div>
-     <div class="input-field col s12">
-        <i class="material-icons prefix">group</i>
-         <select class="listas" id="lstContactoPreferencia">
-           <option value="" disabled selected>Preferencia de Contacto?</option>
-           <option value="1">Correo Electrónico</option>
-           <option value="2">Llamada</option>
-           <option value="3">Whatsapp</option>
-         </select>
-         <label>¿Preferencia de Contacto?*</label>
-     </div>
-
-
-
      <div class="input-field col s12">
         <input type="checkbox" id="rbAceptoTerminos" />
         <label for="rbAceptoTerminos">Estoy de acuerdo con los <a id="btnTerminosCondiciones"> términos y condiciones de privacidad </a></label>
