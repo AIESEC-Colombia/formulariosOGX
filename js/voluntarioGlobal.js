@@ -12,10 +12,7 @@
     		var txtPassword=$("#txtPassword");
     		var txtSecondPassword=$("#txtSecondPassword");
     		var lstConocioOrganizacion=$("#lstConocioOrganizacion");
-                var txtCupon=$("#txtCupon");
-                var lstFechaViaje = $("#lstFechaViaje");
-                var lstContactoPreferencia = $("#lstContactoPreferencia");
-           
+                var txtCupon=$("#txtCupon");           
 
     		if(txtFirstName.val()==""){
     			swal("Ingrese su nombre");
