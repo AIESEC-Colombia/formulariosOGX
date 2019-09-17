@@ -12,7 +12,10 @@
     		var txtPassword=$("#txtPassword");
     		var txtSecondPassword=$("#txtSecondPassword");
     		var lstConocioOrganizacion=$("#lstConocioOrganizacion");
-                var txtCupon=$("#txtCupon");           
+                var txtCupon=$("#txtCupon");
+                var lstFechaViaje = $("#lstFechaViaje");
+                var lstPorque = $("#lstPorque");
+           
 
     		if(txtFirstName.val()==""){
     			swal("Ingrese su nombre");
@@ -22,6 +25,9 @@
     			return false;
     		}else if(txtPhone.val()==""){
     			swal("Ingrese su numero de telefono");
+    			return false;
+    		} else if(txtMobil.val()==""){
+    			swal("Ingrese su telefono celular");
     			return false;
     		} else if(txtmail.val()==""){
     			swal("Ingrese su email");
@@ -38,6 +44,9 @@
     		} else if(lstConocioOrganizacion.val()==null){
     			swal("Seleccione como conocio la organización");
     			return false;
+    		}else if(lstFechaViaje.val()==null){
+                        swal("Seleccione la fecha del viaje");
+                        return false;
                 }else if(txtPassword.val()!=txtSecondPassword.val()){
     			swal("las contraseñas no coinciden");
     			return false;
@@ -114,6 +123,9 @@
                     data["txtSecondPassword"]=$("#txtSecondPassword").val();
                     data["lstConocioOrganizacion"]=$("#lstConocioOrganizacion").val();
                     data["txtCupon"]=$("#txtCupon").val();
+                    data["lstFechaViaje"]=$("#lstFechaViaje").val();
+                    data["lstPorque"]=$("#lstPorque").val();
+                    
 
     				ajax.ajaxSinJson(data,url,saveEndAjax,errorEnd);
                     $.blockUI({ 

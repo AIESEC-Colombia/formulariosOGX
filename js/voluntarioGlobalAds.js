@@ -13,6 +13,7 @@
     		var txtSecondPassword=$("#txtSecondPassword");
                 var lstConocioOrganizacion=$("#lstConocioOrganizacion");
                 var txtCupon=$("#txtCupon");
+                var lstPorque = $("#lstPorque");
             
 
     		if(txtFirstName.val()==""){
@@ -21,35 +22,36 @@
     		}else if(txtLastName.val()==""){
     			swal("Ingrese su apellido");
     			return false;
-    		} 
-    		else if(txtPhone.val()==""){
+    		}else if(txtPhone.val()==""){
     			swal("Ingrese su numero de telefono");
     			return false;
-    		}  
-    		else if(txtmail.val()==""){
+    		} else if(txtMobil.val()==""){
+    			swal("Ingrese su telefono celular");
+    			return false;
+    		} else if(txtmail.val()==""){
     			swal("Ingrese su email");
     			return false;
-    		}else if(lstUniversidad.val()==null){
+    		} else if(lstUniversidad.val()==null){
     			swal("Seleccione su universidad");
     			return false;
     		} else if(txtPassword.val()==""){
     			swal("Ingrese la clave");
     			return false;
-    		} 
-    		else if(txtSecondPassword.val()==""){
+    		} else if(txtSecondPassword.val()==""){
     			swal("Repita la clave");
     			return false;
-                } 
-                else if(lstConocioOrganizacion.val()==null){
+    		} else if(lstConocioOrganizacion.val()==null){
     			swal("Seleccione como conocio la organización");
     			return false;
-    		}else if(txtPassword.val()!=txtSecondPassword.val()){
+    		}else if(lstFechaViaje.val()==null){
+                        swal("Seleccione la fecha del viaje");
+                        return false;
+                }else if(txtPassword.val()!=txtSecondPassword.val()){
     			swal("las contraseñas no coinciden");
     			return false;
-                }else if(!($("#rbAceptoTerminos").is(":checked"))){
+    		}else if(!($("#rbAceptoTerminos").is(":checked"))){
                         swal("Debe aceptar los términos y condiciones de privacidad");
-                }
-                else{
+                }else{
     			return true;
     		}
 
@@ -120,6 +122,9 @@
                     data["txtSecondPassword"]=$("#txtSecondPassword").val();
                     data["lstConocioOrganizacion"]=$("#lstConocioOrganizacion").val();
                     data["txtCupon"]=$("#txtCupon").val();
+                    data["lstFechaViaje"]=$("#lstFechaViaje").val();
+                    data["lstPorque"]=$("#lstPorque").val();
+                    
                    
                     
     				ajax.ajaxSinJson(data,url,saveEndAjax,errorEnd);

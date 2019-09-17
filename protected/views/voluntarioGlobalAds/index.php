@@ -63,7 +63,7 @@
         <input id="txtSecondPassword" type="password" class="validate">
         <label for="txtSecondPassword">Repita la Clave*</label>
       </div>
- t
+ 
     <div class="input-field col s12">
       <i class="material-icons prefix">email</i>
         <select class="listas" id="lstConocioOrganizacion">
@@ -87,6 +87,26 @@
           <option value="29">Otro</option>
         </select>
       <label>Â¿CÃ³mo conociÃ³ AIESEC?*</label>
+     </div>
+      <div class="input-field col s12">
+        <i class="material-icons prefix">flight_land</i>
+         <select class="listas" id="lstFechaViaje">
+           <option value="" disabled selected>Cuando crees que sería la fecha de viaje?</option>
+           <option value="1">De hoy a 6 meses</option>
+           <option value="2">De 6 meses un año</option>
+           <option value="3">Sin fecha fija pero quiero conocer más</option>
+         </select>
+         <label>¿Cuando crees que sería la fecha de viaje?*</label>
+     </div>
+     <div class="input-field col s12">
+      <i class="material-icons prefix">email</i>
+        <select class="listas" id="lstPorque">
+          <option value="" disabled selected>Por qué te quieres ir de intercambio </option>
+          <option value="1">Conocer una nueva cultura</option>
+          <option value="2">Contribuir con las SDG's</option>
+          <option value="3">Desarrollarme</option>
+        </select>
+      <label>Â¿Por qué te quieres ir de intercambio?*</label>
      </div>
 
      <div class="input-field col s12">
