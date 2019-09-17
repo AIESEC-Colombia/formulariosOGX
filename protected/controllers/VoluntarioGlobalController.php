@@ -103,7 +103,7 @@ class VoluntarioGlobalController extends Controller
                 'user[country]' => $nameColombia,
                 'user[mc]' => $idColombia,
                 'user[Cupon]' => htmlspecialchars($Json['txtCupon']),
-                'user[Porque]' => htmlspecialchars($Json['valPorque']),
+                'user[Porque]' => htmlspecialchars($Json['lstPorque']),
                 'user[lc_input]' => htmlspecialchars($Json['valUniversidad']),
                 'user[lc]' => htmlspecialchars($Json['valUniversidad']),
                 'commit' => 'REGISTER'
