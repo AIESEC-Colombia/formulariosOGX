@@ -86,8 +86,8 @@
           <option value="29">Otro</option>
         </select>
          <label>Â¿CÃ³mo conociÃ³ AIESEC?*</label>
-     </div>
-      <div class="input-field col s12">
+        </div>
+        <div class="input-field col s12">
         <i class="material-icons prefix">flight_land</i>
          <select class="listas" id="lstFechaViaje">
            <option value="" disabled selected>Cuando crees que sería la fecha de viaje?</option>
@@ -96,31 +96,31 @@
            <option value="3">Sin fecha fija pero quiero conocer más</option>
          </select>
          <label>¿Cuando crees que sería la fecha de viaje?*</label>
-     </div>
-      </div>
-     <div class="input-field col s12">
-      <i class="material-icons prefix">email</i>
-        <select class="listas" id="lstPorque">
-          <option value="" disabled selected>Por qué te quieres ir de intercambio </option>
-          <option value="1">Conocer una nueva cultura</option>
-          <option value="2">Contribuir con las SDG's</option>
-          <option value="3">Desarrollarme</option>
-        </select>
-      <label>Â¿Por qué te quieres ir de intercambio?*</label>
-     </div>
-      <div class="input-field col s12">
+        </div>
+        </div>
+        <div class="input-field col s12">
+        <i class="material-icons prefix">email</i>
+            <select class="listas" id="lstPorque">
+            <option value="" disabled selected>Por qué te quieres ir de intercambio </option>
+            <option value="1">Conocer una nueva cultura</option>
+            <option value="2">Contribuir con las SDG's</option>
+            <option value="3">Desarrollarme</option>
+            </select>
+        <label>Â¿Por qué te quieres ir de intercambio?*</label>
+        </div>
+        <div class="input-field col s12">
         <i class="material-icons prefix">Cupon</i>
          <input id="txtCupon" type="text" class="validate">
          <label for="txtCupon">Tienes codigo de referido escribelo aquÃ­.</label>
-      </div>
-     <div class="input-field col s12">
-        <input type="checkbox" id="rbAceptoTerminos" />
-        <label for="rbAceptoTerminos">Estoy de acuerdo con los <a id="btnTerminosCondiciones"> tÃ©rminos y condiciones de privacidad </a></label>
-     </div>
+        </div>
+        <div class="input-field col s12">
+            <input type="checkbox" id="rbAceptoTerminos" />
+            <label for="rbAceptoTerminos">Estoy de acuerdo con los <a id="btnTerminosCondiciones"> tÃ©rminos y condiciones de privacidad </a></label>
+        </div>
 
-    <div class="input-field col s12">
-    <a class="waves-effect waves-light btn" id=btnIngresar style="background-color: '#f85a40'">Registrarse</a>
-    </div>
+        <div class="input-field col s12">
+        <a class="waves-effect waves-light btn" id=btnIngresar style="background-color: '#f85a40'">Registrarse</a>
+        </div>
 
   </div>
      <style type="text/css">

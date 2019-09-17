@@ -25,10 +25,7 @@
     		}else if(txtPhone.val()==""){
     			swal("Ingrese su numero de telefono");
     			return false;
-    		} else if(txtMobil.val()==""){
-    			swal("Ingrese su telefono celular");
-    			return false;
-    		} else if(txtmail.val()==""){
+    		}else if(txtmail.val()==""){
     			swal("Ingrese su email");
     			return false;
     		} else if(lstUniversidad.val()==null){
