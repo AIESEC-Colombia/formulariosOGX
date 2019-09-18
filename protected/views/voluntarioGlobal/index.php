@@ -96,17 +96,17 @@
      <div class="input-field col s12">
         <i class="material-icons prefix">flight_land</i>
          <select class="listas" id="lstFechaViaje">
-           <option value="" disabled selected>Cuando crees que serÃa la fecha de viaje?</option>
+           <option value="" disabled selected>Cuando crees que serÃ­a la fecha de viaje?</option>
            <option value="1">De hoy a 6 meses</option>
            <option value="2">De 6 meses un año</option>
            <option value="3">Sin fecha fija pero quiero conocer más</option>
          </select>
-         <label>Â¿Cuando crees que serÃa la fecha de viaje?*</label>
+         <label>Â¿Cuando crees que serÃ­a la fecha de viaje?*</label>
      </div>
       <div class="input-field col s12">
         <i class="material-icons prefix">Cupon</i>
          <input id="txtCupon" type="text" class="validate">
-         <label for="txtCupon">Tienes codigo de referido escribelo aquí.</label>
+         <label for="txtCupon">Tienes codigo de referido escribelo aquÃ­.</label>
       </div>
      <div class="input-field col s12">
         <i class="material-icons prefix">group</i>
