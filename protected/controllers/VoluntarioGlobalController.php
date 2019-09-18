@@ -1,5 +1,4 @@
 <?php
-
 class VoluntarioGlobalController extends Controller
 {
     /**
@@ -20,7 +19,6 @@ class VoluntarioGlobalController extends Controller
             ),
         );
     }
-
     /**
      * This is the default 'index' action that is invoked
      * when an action is not explicitly requested by users.
@@ -31,7 +29,6 @@ class VoluntarioGlobalController extends Controller
         // using the default layout 'protected/views/layouts/main.php'
         $this->render('index');
     }
-
     /**
      * This is the action to handle external exceptions.
      */
@@ -44,7 +41,6 @@ class VoluntarioGlobalController extends Controller
                 $this->render('error', $error);
         }
     }
-
     public function actionInserExpa()
     {
         try {
@@ -56,26 +52,24 @@ class VoluntarioGlobalController extends Controller
             Podio::setup("developerupb-lecr99", "ewH2NOFno2Aucnrxx7KcKmFUGrhQ5IBNJYnrHA3442j7IKf9wkQyl7EULzsfIC8g");
             Podio::authenticate_with_app($app_id, $app_token);
             $Comite = new Comite();
-
             $fields = new PodioItemFieldCollection(array(
                 new PodioTextItemField(array("external_id" => "titulo", "values" => $Json['txtFirstName'])),
                 new PodioTextItemField(array("external_id" => "lastname", "values" => $Json['txtLastName'])),
                 new PodioTextItemField(array("external_id" => "phone-2", "values" => $Json['txtPhone'])),
+                new PodioTextItemField(array("external_id" => "cellphone-2", "values" => $Json['txtMobil'])),
                 new PodioCategoryItemField(array("external_id" => "email-2", "values" => $Json['txtmail'])),
                 new PodioCategoryItemField(array("external_id" => "iduniversity", "values" => $Json['valUniversidad'])),
                 new PodioCategoryItemField(array("external_id" => "university", "values" => $Json['nombreUniversidad'])),
                 new PodioTextItemField(array("external_id" => "cupon-2", "values" => $Json['txtCupon'])),
                 new PodioCategoryItemField(array("external_id" => "howmet-2", "values" => (int)$Json['lstConocioOrganizacion'])),
                 new PodioCategoryItemField(array("external_id" => "fecha-de-viaje", "values" => (int)$Json['lstFechaViaje'])),
-                new PodioCategoryItemField(array("external_id" => "por-que-te-quieres-ir-de-intercambio", "values" => (int)$Json['lstPorque'])),
+                new PodioCategoryItemField(array("external_id" => "preferencia-de-contacto", "values" => (int)$Json['lstContactoPreferencia'])),
                 new PodioCategoryItemField(array("external_id" => "lc", "values" => $Comite->getValorPodio((int)$Json['valUniversidad'])))
             ));
-
             $item = new PodioItem(array(
                 'app' => new PodioApp($app_id),
                 'fields' => $fields
             ));
-
             // Save the new item
             $add = $item->save();
             $idColombia = 1551;
@@ -89,10 +83,8 @@ class VoluntarioGlobalController extends Controller
             ));
             $result = curl_exec($curl);
             curl_close($curl);
-
             preg_match('/<meta name="csrf-token" content="(.*)" \/>/', $result, $matches);
             $gis_token = substr(explode(' ', $matches[1])[0], 0, -1);
-
             $fields = array(
                 'authenticity_token' => htmlspecialchars($gis_token),
                 'user[email]' => htmlspecialchars($Json['txtmail']),
@@ -103,32 +95,25 @@ class VoluntarioGlobalController extends Controller
                 'user[country]' => $nameColombia,
                 'user[mc]' => $idColombia,
                 'user[Cupon]' => htmlspecialchars($Json['txtCupon']),
-                'user[Porque]' => htmlspecialchars($Json['lstPorque']),
                 'user[lc_input]' => htmlspecialchars($Json['valUniversidad']),
                 'user[lc]' => htmlspecialchars($Json['valUniversidad']),
                 'commit' => 'REGISTER'
             );
-
-
             $fields_string = "";
             foreach ($fields as $key => $value) {
                 $fields_string .= $key . '=' . urlencode($value) . '&';
             }
             rtrim($fields_string, '&');
             $innerHTML = "";
-
             $url = "https://auth.aiesec.org/users";
             $ch2 = curl_init();
             curl_setopt($ch2, CURLOPT_URL, $url);
             curl_setopt($ch2, CURLOPT_POST, count($fields));
             curl_setopt($ch2, CURLOPT_POSTFIELDS, $fields_string);
-
             curl_setopt($ch2, CURLOPT_RETURNTRANSFER, TRUE);
             // give cURL the SSL Cert for Salesforce
             curl_setopt($ch2, CURLOPT_SSL_VERIFYPEER, false);
-
             $result = curl_exec($ch2);
-
             //curl_errors($ch2);
             //close connection
             curl_close($ch2);
@@ -138,11 +123,9 @@ class VoluntarioGlobalController extends Controller
             $doc->loadHTML($result);
             libxml_clear_errors();
             $selector = new DOMXPath($doc);
-
             $result = $selector->query('//div[@id="error_explanation"]');
             echo "LLego";
             /*if $children = $result->item(0)->childNodes;
-
             (is_iterable($children))
             {
                 foreach ($children as $child) {
@@ -152,10 +135,8 @@ class VoluntarioGlobalController extends Controller
                     //$innerHTML.add($tmp_doc->saveHTML());
                 }
             }
-
             $innerHTML = preg_replace('~[\r\n]+~', '', $innerHTML);
             $innerHTML = str_replace(array('"', "'"), '', $innerHTML);*/
-
             //echo json_encode($matches);
             echo json_encode($result);
         } catch (Exception $e) {
@@ -164,9 +145,7 @@ class VoluntarioGlobalController extends Controller
                 "message" => $e->getMessage(),
             ));
         }
-
     }
-
     public function actionUniversidadesColombia()
     {
         $data = file_get_contents("https://gis-api.aiesec.org/v2/lists/mcs_alignments.json");

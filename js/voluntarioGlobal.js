@@ -1,4 +1,4 @@
- require( ["js/control"
+require( ["js/control"
         ,"js/clases/ajax"
         ,"js/clases/constantes"],
     function(control,ajax,constantes) {
@@ -7,6 +7,7 @@
     		var txtFirstName=$("#txtFirstName");
     		var txtLastName=$("#txtLastName");
     		var txtPhone=$("#txtPhone");
+    		var txtMobil=$("#txtMobil");
     		var txtmail=$("#txtmail");
     		var lstUniversidad=$("#lstUniversidad");
     		var txtPassword=$("#txtPassword");
@@ -14,7 +15,7 @@
     		var lstConocioOrganizacion=$("#lstConocioOrganizacion");
                 var txtCupon=$("#txtCupon");
                 var lstFechaViaje = $("#lstFechaViaje");
-                var lstPorque = $("#lstPorque");
+                var lstContactoPreferencia = $("#lstContactoPreferencia");
            
 
     		if(txtFirstName.val()==""){
@@ -25,6 +26,9 @@
     			return false;
     		}else if(txtPhone.val()==""){
     			swal("Ingrese su numero de telefono");
+    			return false;
+    		} else if(txtMobil.val()==""){
+    			swal("Ingrese su telefono celular");
     			return false;
     		} else if(txtmail.val()==""){
     			swal("Ingrese su email");
@@ -39,16 +43,19 @@
     			swal("Repita la clave");
     			return false;
     		} else if(lstConocioOrganizacion.val()==null){
-    			swal("Seleccione como conocio la organizaciÃ³n");
+    			swal("Seleccione como conocio la organización");
     			return false;
     		}else if(lstFechaViaje.val()==null){
                         swal("Seleccione la fecha del viaje");
                         return false;
+                }else if(lstContactoPreferencia.val()==null){
+                        swal("Seleccione como desea ser contactado");
+                        return false;
                 }else if(txtPassword.val()!=txtSecondPassword.val()){
-    			swal("las contraseÃ±as no coinciden");
+    			swal("las contraseñas no coinciden");
     			return false;
     		}else if(!($("#rbAceptoTerminos").is(":checked"))){
-                        swal("Debe aceptar los tÃ©rminos y condiciones de privacidad");
+                        swal("Debe aceptar los términos y condiciones de privacidad");
                 }else{
     			return true;
     		}
@@ -84,14 +91,14 @@
             var pswd = text;
                 //validate the length
                 if ( pswd.length < 8 ) {
-                   swal("La contraseÃ±a deben tener minimo 8 digitos");
+                   swal("La contraseña deben tener minimo 8 digitos");
                    return false;
                 }
                 else if (!( pswd.match(/[A-z]/)) ) {
-                    swal("La contraseÃ±a debe tener mayusculas y minusculas");
+                    swal("La contraseña debe tener mayusculas y minusculas");
                     return false;
                 }else if (!( pswd.match(/\d/) )) {
-                    swal("La contraseÃ±a deben tener numeros");
+                    swal("La contraseña deben tener numeros");
                     return false;
                 }else{
                     return true;
@@ -113,6 +120,7 @@
                     data["txtFirstName"]=$("#txtFirstName").val();
                     data["txtLastName"]=$("#txtLastName").val();
                     data["txtPhone"]=$("#txtPhone").val();
+                    data["txtMobil"]=$("#txtMobil").val();
                     data["txtmail"]=$("#txtmail").val();
                     data["valUniversidad"]=$("#lstUniversidad").val();
                     data["nombreUniversidad"]=universidadNombre;
@@ -121,8 +129,7 @@
                     data["lstConocioOrganizacion"]=$("#lstConocioOrganizacion").val();
                     data["txtCupon"]=$("#txtCupon").val();
                     data["lstFechaViaje"]=$("#lstFechaViaje").val();
-                    data["lstPorque"]=$("#lstPorque").val();
-                    
+                    data["lstContactoPreferencia"]=$("#lstContactoPreferencia").val();
 
     				ajax.ajaxSinJson(data,url,saveEndAjax,errorEnd);
                     $.blockUI({ 

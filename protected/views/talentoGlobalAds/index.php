@@ -84,7 +84,7 @@
            <option value="2">De 6 meses un año</option>
            <option value="3">Sin fecha fija pero quiero conocer más</option>        
          </select>
-         <label>¿Cuando crees que sería la fecha de viaje?*</label>
+         <label>¿Cuando crees que ser�a la fecha de viaje?*</label>
      </div>
 
      <div class="input-field col s12">

@@ -24,7 +24,7 @@
         <h2 class="header" id="title" style="background-color: '#f85a40'">Voluntario Global</h2>
       </div>
       <div class="col s12 m12">
-       Gracias por visitiar nuestro programa de Voluntario Global, con este formulario se registrara en nuestra plataforma de oportunidades sin compromiso. Luego de completar su registro nos pondremos en contacto para asesorarlo en su bÃºsqueda y resoluciÃ³n de inquietudes.
+       Gracias por visitiar nuestro programa de Voluntario Global, con este formulario se registrara en nuestra plataforma de oportunidades sin compromiso. Luego de completar su registro nos pondremos en contacto para asesorarlo en su búsqueda y resolución de inquietudes.
       </div>
       <div class="input-field col s12">
          <i class="material-icons prefix">account_circle</i>
@@ -39,7 +39,12 @@
       <div class="input-field col s12">
          <i class="material-icons prefix">phone</i>
          <input id="txtPhone" type="text" class="validate">
-         <label for="txtPhone">TelÃ©fono*</label>
+         <label for="txtPhone">Teléfono*</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">settings_cell</i>
+         <input id="txtMobil" type="text" class="validate">
+         <label for="txtMobil">Celular*</label>
       </div>
       <div class="input-field col s12">
         <i class="material-icons prefix">email</i>
@@ -66,28 +71,20 @@
       <div class="input-field col s12">
         <i class="material-icons prefix">email</i>
          <select class="listas" id="lstConocioOrganizacion">
-            <option value="" disabled selected>Como conocia la organizaciÃ³n</option>
-            <option value="3">Google</option>
-            <option value="11">Facebook</option>
-            <option value="12">Instagram</option>
-            <option value="14">WhatsApp</option>
-            <option value="26">Linkedin</option>
-            <option value="27">Twitter</option>
-            <option value="28">Correo</option>
-            <option value="15">Un amigo o conocido</option>
-            <option value="16">PÃ¡gina Web</option>
-            <option value="17">Stand/ActivaciÃ³n</option>
-            <option value="18">Evento, foro o conferencia</option>
-            <option value="10">Youth Speak</option>
-            <option value="20">Instituto</option>
-            <option value="4">Medios de comunicaciÃ³n(PeriÃ³dicos, Radio, TV, Artículos...)</option>
-            <option value="24">Referido de un AIESECo</option>
-            <option value="25">Un amigo que ya tomÃ³ un intercambio</option>
-            <option value="29">Otro</option>
-        </select>
-         <label>Â¿CÃ³mo conociÃ³ AIESEC?*</label>
-        </div>
-        <div class="input-field col s12">
+           <option value="" disabled selected>Como conocia la organización</option>
+           <option value="1">Universidad</option>
+           <option value="2">Redes sociales</option>
+           <option value="3">Google</option>
+           <option value="4">Medios de comunicación (Periódicos, Radio, TV, Artículos...)</option>
+           <option value="5">Youth Speak</option>
+           <option value="23">Comunidad KOF</option>
+           <option value="24">Referido de un AIESECo</option>
+           <option value="25">Un amigo que ya tomó un intercambio</option>
+         </select>
+         <label>¿Cómo conoció AIESEC?*</label>
+     </div>
+
+     <div class="input-field col s12">
         <i class="material-icons prefix">flight_land</i>
          <select class="listas" id="lstFechaViaje">
            <option value="" disabled selected>Cuando crees que sería la fecha de viaje?</option>
@@ -95,32 +92,34 @@
            <option value="2">De 6 meses un año</option>
            <option value="3">Sin fecha fija pero quiero conocer más</option>
          </select>
-         <label>¿Cuando crees que serÃ-a la fecha de viaje?*</label>
-        </div>
-        
-        <div class="input-field col s12">
-        <i class="material-icons prefix">email</i>
-          <select class="listas" id="lstPorque">
-            <option value="" disabled selected>Por quÃ© te quieres ir de intercambio </option>
-            <option value="1">Conocer una nueva cultura</option>
-            <option value="2">Contribuir con las SDG's</option>
-            <option value="3">Desarrollarme</option>
-           </select>
-         <label>Â¿Por quÃ© te quieres ir de intercambio?*</label>
-        </div>
-        <div class="input-field col s12">
+         <label>¿Cuando crees que sería la fecha de viaje?*</label>
+     </div>
+      <div class="input-field col s12">
         <i class="material-icons prefix">Cupon</i>
          <input id="txtCupon" type="text" class="validate">
-         <label for="txtCupon">Tienes codigo de referido escribelo aquÃ­.</label>
-        </div>
-        <div class="input-field col s12">
-            <input type="checkbox" id="rbAceptoTerminos" />
-            <label for="rbAceptoTerminos">Estoy de acuerdo con los <a id="btnTerminosCondiciones"> tÃ©rminos y condiciones de privacidad </a></label>
-        </div>
+         <label for="txtCupon">Tienes codigo de referido escribelo aquí.</label>
+      </div>
+     <div class="input-field col s12">
+        <i class="material-icons prefix">group</i>
+         <select class="listas" id="lstContactoPreferencia">
+           <option value="" disabled selected>Preferencia de Contacto?</option>
+           <option value="1">Correo Electrónico</option>
+           <option value="2">Llamada</option>
+           <option value="3">Whatsapp</option>
+         </select>
+         <label>¿Preferencia de Contacto?*</label>
+     </div>
 
-        <div class="input-field col s12">
-        <a class="waves-effect waves-light btn" id=btnIngresar style="background-color: '#f85a40'">Registrarse</a>
-        </div>
+
+
+     <div class="input-field col s12">
+        <input type="checkbox" id="rbAceptoTerminos" />
+        <label for="rbAceptoTerminos">Estoy de acuerdo con los <a id="btnTerminosCondiciones"> términos y condiciones de privacidad </a></label>
+     </div>
+
+    <div class="input-field col s12">
+    <a class="waves-effect waves-light btn" id=btnIngresar style="background-color: '#f85a40'">Registrarse</a>
+    </div>
 
   </div>
      <style type="text/css">
