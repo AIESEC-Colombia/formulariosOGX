@@ -24,7 +24,7 @@
         <h2 class="header" id="title" style="background-color: '#f85a40'">Voluntario Global</h2>
       </div>
       <div class="col s12 m12">
-       Gracias por visitiar nuestro programa de Voluntario Global, con este formulario se registrara en nuestra plataforma de oportunidades sin compromiso. Luego de completar su registro nos pondremos en contacto para asesorarlo en su búsqueda y resolución de inquietudes.
+       Gracias por visitiar nuestro programa de Voluntario Global, con este formulario se registrara en nuestra plataforma de oportunidades sin compromiso. Luego de completar su registro nos pondremos en contacto para asesorarlo en su bÃºsqueda y resoluciÃ³n de inquietudes.
       </div>
       <div class="input-field col s12">
          <i class="material-icons prefix">account_circle</i>
@@ -39,7 +39,7 @@
       <div class="input-field col s12">
          <i class="material-icons prefix">phone</i>
          <input id="txtPhone" type="text" class="validate">
-         <label for="txtPhone">Teléfono*</label>
+         <label for="txtPhone">TelÃ©fono*</label>
       </div>
       <div class="input-field col s12">
          <i class="material-icons prefix">settings_cell</i>
@@ -71,28 +71,37 @@
       <div class="input-field col s12">
         <i class="material-icons prefix">email</i>
          <select class="listas" id="lstConocioOrganizacion">
-           <option value="" disabled selected>Como conocia la organización</option>
-           <option value="1">Universidad</option>
-           <option value="2">Redes sociales</option>
+           <option value="" disabled selected>Como conocio la organizaciÃ³n</option>
            <option value="3">Google</option>
-           <option value="4">Medios de comunicación (Periódicos, Radio, TV, Artículos...)</option>
-           <option value="5">Youth Speak</option>
-           <option value="23">Comunidad KOF</option>
-           <option value="24">Referido de un AIESECo</option>
-           <option value="25">Un amigo que ya tomó un intercambio</option>
+            <option value="11">Facebook</option>
+            <option value="12">Instagram</option>
+            <option value="14">WhatsApp</option>
+            <option value="26">Linkedin</option>
+            <option value="27">Twitter</option>
+            <option value="28">Correo</option>
+            <option value="15">Un amigo o conocido</option>
+            <option value="16">PÃ¡gina Web</option>
+            <option value="17">Stand/ActivaciÃ³n</option>
+            <option value="18">Evento, foro o conferencia</option>
+            <option value="10">Youth Speak</option>
+            <option value="20">Instituto</option>
+            <option value="4">Medios de comunicaciÃ³n(PeriÃ³dicos, Radio, TV, Artículos...)</option>
+            <option value="24">Referido de un AIESECo</option>
+            <option value="25">Un amigo que ya tomÃ³ un intercambio</option>
+            <option value="29">Otro</option>
          </select>
-         <label>¿Cómo conoció AIESEC?*</label>
+         <label>Â¿CÃ³mo conociÃ³ AIESEC?*</label>
      </div>
 
      <div class="input-field col s12">
         <i class="material-icons prefix">flight_land</i>
          <select class="listas" id="lstFechaViaje">
-           <option value="" disabled selected>Cuando crees que sería la fecha de viaje?</option>
+           <option value="" disabled selected>Cuando crees que serÃa la fecha de viaje?</option>
            <option value="1">De hoy a 6 meses</option>
            <option value="2">De 6 meses un año</option>
            <option value="3">Sin fecha fija pero quiero conocer más</option>
          </select>
-         <label>¿Cuando crees que sería la fecha de viaje?*</label>
+         <label>Â¿Cuando crees que serÃa la fecha de viaje?*</label>
      </div>
       <div class="input-field col s12">
         <i class="material-icons prefix">Cupon</i>
@@ -107,7 +116,7 @@
            <option value="2">Llamada</option>
            <option value="3">Whatsapp</option>
          </select>
-         <label>¿Preferencia de Contacto?*</label>
+         <label>Â¿Preferencia de Contacto?*</label>
      </div>
 
 
