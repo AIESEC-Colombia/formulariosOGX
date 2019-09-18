@@ -96,12 +96,11 @@
            <option value="2">De 6 meses un año</option>
            <option value="3">Sin fecha fija pero quiero conocer más</option>
          </select>
-         <label>¿Cuando crees que sería la fecha de viaje?*</label>
+         <label>¿Cuando crees que serÃ©a la fecha de viaje?*</label>
      </div>
      <div class="input-field col s12">
       <i class="material-icons prefix">email</i>
-        <select class="listas" id="lstPorque">
-          <option value="" disabled selected>Por qué te quieres ir de intercambio </option>
+     <div class="input-field col s12"abled selected>Por quÃ© te quieres ir de intercambio </option>
           <option value="1">Conocer una nueva cultura</option>
           <option value="2">Contribuir con las SDG's</option>
           <option value="3">Desarrollarme</option>
