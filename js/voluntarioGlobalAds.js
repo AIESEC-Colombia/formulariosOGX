@@ -13,7 +13,6 @@
     		var txtSecondPassword=$("#txtSecondPassword");
                 var lstConocioOrganizacion=$("#lstConocioOrganizacion");
                 var txtCupon=$("#txtCupon");
-                var lstFechaViaje = $("#lstFechaViaje");
             
 
     		if(txtFirstName.val()==""){
@@ -44,10 +43,7 @@
                 else if(lstConocioOrganizacion.val()==null){
     			swal("Seleccione como conocio la organización");
     			return false;
-    		}else if(lstFechaViaje.val()==null){
-                        swal("Seleccione la fecha del viaje");
-                        return false;
-                }else if(txtPassword.val()!=txtSecondPassword.val()){
+    		}else if(txtPassword.val()!=txtSecondPassword.val()){
     			swal("las contraseñas no coinciden");
     			return false;
                 }else if(!($("#rbAceptoTerminos").is(":checked"))){
@@ -124,7 +120,7 @@
                     data["txtSecondPassword"]=$("#txtSecondPassword").val();
                     data["lstConocioOrganizacion"]=$("#lstConocioOrganizacion").val();
                     data["txtCupon"]=$("#txtCupon").val();
-                    data["lstFechaViaje"]=$("#lstFechaViaje").val();
+                    
                     
                    
                     

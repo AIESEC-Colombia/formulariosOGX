@@ -12,9 +12,10 @@ require( ["js/control"
     		var txtPassword=$("#txtPassword");
     		var txtSecondPassword=$("#txtSecondPassword");
     		var lstConocioOrganizacion=$("#lstConocioOrganizacion");
+                var lstPorque = $("#lstPorque");
                 var txtCupon=$("#txtCupon");
-                var lstPorque = $("#lstPorque");            
-                var lstFechaViaje = $("#lstFechaViaje");
+                            
+                
               
            
 
@@ -42,10 +43,7 @@ require( ["js/control"
     		} else if(lstConocioOrganizacion.val()==null){
     			swal("Seleccione como conocio la organización");
     			return false;
-    		}else if(lstFechaViaje.val()==null){
-                        swal("Seleccione la fecha del viaje");
-                        return false;
-                }else if(txtPassword.val()!=txtSecondPassword.val()){
+    		}else if(txtPassword.val()!=txtSecondPassword.val()){
     			swal("las contraseñas no coinciden");
     			return false;
     		}else if(!($("#rbAceptoTerminos").is(":checked"))){
@@ -120,9 +118,9 @@ require( ["js/control"
                     data["txtPassword"]=$("#txtPassword").val();
                     data["txtSecondPassword"]=$("#txtSecondPassword").val();
                     data["lstConocioOrganizacion"]=$("#lstConocioOrganizacion").val();
-                    data["txtCupon"]=$("#txtCupon").val();
                     data["lstPorque"]=$("#lstPorque").val();
-                    data["lstFechaViaje"]=$("#lstFechaViaje").val();
+                    data["txtCupon"]=$("#txtCupon").val();
+                    
                     
 
     				ajax.ajaxSinJson(data,url,saveEndAjax,errorEnd);
