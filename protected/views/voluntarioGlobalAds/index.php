@@ -73,20 +73,23 @@
       <i class="material-icons prefix">email</i>
         <select class="listas" id="lstConocioOrganizacion">
           <option value="" disabled selected>Como conocia la organización</option>
-          <option value="3">Google</option>
-          <option value="11">Facebook</option>
-          <option value="12">Instagram</option>
-          <option value="14">WhatsApp</option>
-          <option value="15">Youtubers</option>
-          <option value="16">Página Web</option>
-          <option value="17">Stand/Activación</option>
-          <option value="18">Volantes o Publicidad impresa</option>
-          <option value="19">Influencers</option>
-          <option value="20">Instituto</option>
-          <option value="21">Groupon</option>
-          <option value="23">Comunidad KOF</option>
-          <option value="24">Referido de un AIESECo</option>
-          <option value="25">Un amigo que ya tomó un intercambio</option>
+         <option value="3">Google</option>
+            <option value="11">Facebook</option>
+            <option value="12">Instagram</option>
+            <option value="14">WhatsApp</option>
+            <option value="26">Linkedin</option>
+            <option value="27">Twitter</option>
+            <option value="28">Correo</option>
+            <option value="15">Un amigo o conocido</option>
+            <option value="16">PÃ¡gina Web</option>
+            <option value="17">Stand/ActivaciÃ³n</option>
+            <option value="18">Evento, foro o conferencia</option>
+            <option value="10">Youth Speak</option>
+            <option value="20">Instituto</option>
+            <option value="4">Medios de comunicaciÃ³n(PeriÃ³dicos, Radio, TV, Artículos...)</option>
+            <option value="24">Referido de un AIESECo</option>
+            <option value="25">Un amigo que ya tomÃ³ un intercambio</option>
+            <option value="29">Otro</option>
         </select>
       <label>¿Cómo conoció AIESEC?*</label>
      </div>
@@ -106,6 +109,16 @@
          <input id="txtCupon" type="text" class="validate">
          <label for="txtCupon">Tienes codigo de referido escribelo aquí.</label>
       </div>
+      <div class="input-field col s12">
+        <i class="material-icons prefix">email</i>
+          <select class="listas" id="lstPorque">
+            <option value="" disabled selected>Por quÃ© te quieres ir de intercambio </option>
+            <option value="1">Conocer una nueva cultura</option>
+            <option value="2">Contribuir con las SDG's</option>
+            <option value="3">Desarrollarme</option>
+           </select>
+         <label>Â¿Por quÃ© te quieres ir de intercambio?*</label>
+       </div>
       <div class="input-field col s12">
         <i class="material-icons prefix">group</i>
          <select class="listas" id="lstContactoPreferencia">

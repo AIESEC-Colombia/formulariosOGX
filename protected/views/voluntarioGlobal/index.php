@@ -85,7 +85,7 @@
             <option value="18">Evento, foro o conferencia</option>
             <option value="10">Youth Speak</option>
             <option value="20">Instituto</option>
-            <option value="4">Medios de comunicaci贸n(Peri贸dicos, Radio, TV, Art韈ulos...)</option>
+            <option value="4">Medios de comunicaci贸n(Peri贸dicos, Radio, TV, Art铆culos...)</option>
             <option value="24">Referido de un AIESECo</option>
             <option value="25">Un amigo que ya tom贸 un intercambio</option>
             <option value="29">Otro</option>
@@ -108,16 +108,26 @@
          <input id="txtCupon" type="text" class="validate">
          <label for="txtCupon">Tienes codigo de referido escribelo aqu铆.</label>
       </div>
-     <div class="input-field col s12">
-        <i class="material-icons prefix">group</i>
-         <select class="listas" id="lstContactoPreferencia">
-           <option value="" disabled selected>Preferencia de Contacto?</option>
-           <option value="1">Correo Electr髇ico</option>
-           <option value="2">Llamada</option>
-           <option value="3">Whatsapp</option>
-         </select>
-         <label>驴Preferencia de Contacto?*</label>
-     </div>
+      <div class="input-field col s12">
+        <i class="material-icons prefix">email</i>
+          <select class="listas" id="lstPorque">
+            <option value="" disabled selected>Por qu茅 te quieres ir de intercambio </option>
+            <option value="1">Conocer una nueva cultura</option>
+            <option value="2">Contribuir con las SDG's</option>
+            <option value="3">Desarrollarme</option>
+           </select>
+         <label>驴Por qu茅 te quieres ir de intercambio?*</label>
+        </div>
+        <div class="input-field col s12">
+           <i class="material-icons prefix">group</i>
+           <select class="listas" id="lstContactoPreferencia">
+            <option value="" disabled selected>Preferencia de Contacto?</option>
+            <option value="1">Correo Electr髇ico</option>
+            <option value="2">Llamada</option>
+            <option value="3">Whatsapp</option>
+           </select>
+           <label>驴Preferencia de Contacto?*</label>
+        </div>
 
 
 

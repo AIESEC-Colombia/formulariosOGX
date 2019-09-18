@@ -15,6 +15,7 @@ require( ["js/control"
     		var lstConocioOrganizacion=$("#lstConocioOrganizacion");
                 var txtCupon=$("#txtCupon");
                 var lstFechaViaje = $("#lstFechaViaje");
+                var lstPorque = $("#lstPorque");            
                 var lstContactoPreferencia = $("#lstContactoPreferencia");
            
 
@@ -129,6 +130,7 @@ require( ["js/control"
                     data["lstConocioOrganizacion"]=$("#lstConocioOrganizacion").val();
                     data["txtCupon"]=$("#txtCupon").val();
                     data["lstFechaViaje"]=$("#lstFechaViaje").val();
+                     data["lstPorque"]=$("#lstPorque").val();
                     data["lstContactoPreferencia"]=$("#lstContactoPreferencia").val();
 
     				ajax.ajaxSinJson(data,url,saveEndAjax,errorEnd);
