@@ -42,11 +42,6 @@
          <label for="txtPhone">Teléfono*</label>
       </div>
       <div class="input-field col s12">
-         <i class="material-icons prefix">settings_cell</i>
-         <input id="txtMobil" type="text" class="validate">
-         <label for="txtMobil">Celular*</label>
-      </div>
-      <div class="input-field col s12">
         <i class="material-icons prefix">email</i>
         <input id="txtmail" type="email" class="validate">
         <label for="email">Email*</label>
@@ -99,8 +94,8 @@
          <select class="listas" id="lstFechaViaje">
            <option value="" disabled selected>Cuando crees que sería la fecha de viaje?</option>
            <option value="1">De hoy a 6 meses</option>
-           <option value="2">De 6 meses un año</option>
-           <option value="3">Sin fecha fija pero quiero conocer más</option>
+           <option value="2">De 6 meses un aÃ±o</option>
+           <option value="3">Sin fecha fija pero quiero conocer mÃ¡s</option>
          </select>
          <label>¿Cuando crees que sería la fecha de viaje?*</label>
      </div>

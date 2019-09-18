@@ -7,7 +7,6 @@ require( ["js/control"
     		var txtFirstName=$("#txtFirstName");
     		var txtLastName=$("#txtLastName");
     		var txtPhone=$("#txtPhone");
-    		var txtMobil=$("#txtMobil");
     		var txtmail=$("#txtmail");
     		var lstUniversidad=$("#lstUniversidad");
     		var txtPassword=$("#txtPassword");
@@ -28,10 +27,7 @@ require( ["js/control"
     		}else if(txtPhone.val()==""){
     			swal("Ingrese su numero de telefono");
     			return false;
-    		} else if(txtMobil.val()==""){
-    			swal("Ingrese su telefono celular");
-    			return false;
-    		} else if(txtmail.val()==""){
+    		}else if(txtmail.val()==""){
     			swal("Ingrese su email");
     			return false;
     		} else if(lstUniversidad.val()==null){
@@ -121,7 +117,6 @@ require( ["js/control"
                     data["txtFirstName"]=$("#txtFirstName").val();
                     data["txtLastName"]=$("#txtLastName").val();
                     data["txtPhone"]=$("#txtPhone").val();
-                    data["txtMobil"]=$("#txtMobil").val();
                     data["txtmail"]=$("#txtmail").val();
                     data["valUniversidad"]=$("#lstUniversidad").val();
                     data["nombreUniversidad"]=universidadNombre;
@@ -130,7 +125,7 @@ require( ["js/control"
                     data["lstConocioOrganizacion"]=$("#lstConocioOrganizacion").val();
                     data["txtCupon"]=$("#txtCupon").val();
                     data["lstFechaViaje"]=$("#lstFechaViaje").val();
-                     data["lstPorque"]=$("#lstPorque").val();
+                    data["lstPorque"]=$("#lstPorque").val();
                     data["lstContactoPreferencia"]=$("#lstContactoPreferencia").val();
 
     				ajax.ajaxSinJson(data,url,saveEndAjax,errorEnd);

@@ -42,11 +42,6 @@
          <label for="txtPhone">Teléfono*</label>
       </div>
       <div class="input-field col s12">
-         <i class="material-icons prefix">settings_cell</i>
-         <input id="txtMobil" type="text" class="validate">
-         <label for="txtMobil">Celular*</label>
-      </div>
-      <div class="input-field col s12">
         <i class="material-icons prefix">email</i>
         <input id="txtmail" type="email" class="validate">
         <label for="email">Email*</label>
@@ -98,8 +93,8 @@
          <select class="listas" id="lstFechaViaje">
            <option value="" disabled selected>Cuando crees que sería la fecha de viaje?</option>
            <option value="1">De hoy a 6 meses</option>
-           <option value="2">De 6 meses un a�o</option>
-           <option value="3">Sin fecha fija pero quiero conocer m�s</option>
+           <option value="2">De 6 meses un año</option>
+           <option value="3">Sin fecha fija pero quiero conocer más</option>
          </select>
          <label>¿Cuando crees que sería la fecha de viaje?*</label>
      </div>
@@ -122,7 +117,7 @@
            <i class="material-icons prefix">group</i>
            <select class="listas" id="lstContactoPreferencia">
             <option value="" disabled selected>Preferencia de Contacto?</option>
-            <option value="1">Correo Electr�nico</option>
+            <option value="1">Correo Electrónico</option>
             <option value="2">Llamada</option>
             <option value="3">Whatsapp</option>
            </select>
@@ -133,7 +128,7 @@
 
      <div class="input-field col s12">
         <input type="checkbox" id="rbAceptoTerminos" />
-        <label for="rbAceptoTerminos">Estoy de acuerdo con los <a id="btnTerminosCondiciones"> t�rminos y condiciones de privacidad </a></label>
+        <label for="rbAceptoTerminos">Estoy de acuerdo con los <a id="btnTerminosCondiciones"> términos y condiciones de privacidad </a></label>
      </div>
 
     <div class="input-field col s12">
