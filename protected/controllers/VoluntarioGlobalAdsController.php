@@ -63,7 +63,6 @@ class VoluntarioGlobalAdsController extends Controller
                 new PodioTextItemField(array("external_id" => "cupon-2", "values" => $Json['txtCupon'])),
                 new PodioCategoryItemField(array("external_id" => "fecha-de-viaje", "values" => (int)$Json['lstFechaViaje'])),
                 new PodioCategoryItemField(array("external_id" => "por-que-te-quieres-ir-de-intercambio", "values" => (int)$Json['lstPorque'])),
-                new PodioCategoryItemField(array("external_id" => "preferencia-de-contacto", "values" => (int)$Json['lstContactoPreferencia'])),
                 new PodioCategoryItemField(array("external_id" => "lc", "values" => $Comite->getValorPodio((int)$Json['valUniversidad'])))
             ));
             $item = new PodioItem(array(

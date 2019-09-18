@@ -113,19 +113,6 @@
            </select>
          <label>¿Por qué te quieres ir de intercambio?*</label>
         </div>
-        <div class="input-field col s12">
-           <i class="material-icons prefix">group</i>
-           <select class="listas" id="lstContactoPreferencia">
-            <option value="" disabled selected>Preferencia de Contacto?</option>
-            <option value="1">Correo Electrónico</option>
-            <option value="2">Llamada</option>
-            <option value="3">Whatsapp</option>
-           </select>
-           <label>¿Preferencia de Contacto?*</label>
-        </div>
-
-
-
      <div class="input-field col s12">
         <input type="checkbox" id="rbAceptoTerminos" />
         <label for="rbAceptoTerminos">Estoy de acuerdo con los <a id="btnTerminosCondiciones"> términos y condiciones de privacidad </a></label>

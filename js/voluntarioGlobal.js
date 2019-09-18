@@ -13,9 +13,9 @@ require( ["js/control"
     		var txtSecondPassword=$("#txtSecondPassword");
     		var lstConocioOrganizacion=$("#lstConocioOrganizacion");
                 var txtCupon=$("#txtCupon");
-                var lstFechaViaje = $("#lstFechaViaje");
                 var lstPorque = $("#lstPorque");            
-                var lstContactoPreferencia = $("#lstContactoPreferencia");
+                var lstFechaViaje = $("#lstFechaViaje");
+              
            
 
     		if(txtFirstName.val()==""){
@@ -44,9 +44,6 @@ require( ["js/control"
     			return false;
     		}else if(lstFechaViaje.val()==null){
                         swal("Seleccione la fecha del viaje");
-                        return false;
-                }else if(lstContactoPreferencia.val()==null){
-                        swal("Seleccione como desea ser contactado");
                         return false;
                 }else if(txtPassword.val()!=txtSecondPassword.val()){
     			swal("las contraseñas no coinciden");
@@ -124,9 +121,9 @@ require( ["js/control"
                     data["txtSecondPassword"]=$("#txtSecondPassword").val();
                     data["lstConocioOrganizacion"]=$("#lstConocioOrganizacion").val();
                     data["txtCupon"]=$("#txtCupon").val();
-                    data["lstFechaViaje"]=$("#lstFechaViaje").val();
                     data["lstPorque"]=$("#lstPorque").val();
-                    data["lstContactoPreferencia"]=$("#lstContactoPreferencia").val();
+                    data["lstFechaViaje"]=$("#lstFechaViaje").val();
+                    
 
     				ajax.ajaxSinJson(data,url,saveEndAjax,errorEnd);
                     $.blockUI({ 
