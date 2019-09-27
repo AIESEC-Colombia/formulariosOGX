@@ -96,16 +96,16 @@
             <option value="3">Desarrollarme</option>
            </select>
          <label>¿Por qué te quieres ir de intercambio?*</label>
-        </div>
+      </div>
       <div class="input-field col s12">
         <i class="material-icons prefix">Cupon</i>
          <input id="txtCupon" type="text" class="validate">
          <label for="txtCupon">Tienes codigo de referido escribelo aquí.</label>
       </div>     
-     <div class="input-field col s12">
+      <div class="input-field col s12">
         <input type="checkbox" id="rbAceptoTerminos" />
         <label for="rbAceptoTerminos">Estoy de acuerdo con los <a id="btnTerminosCondiciones"> términos y condiciones de privacidad </a></label>
-     </div>
+      </div>
 
     <div class="input-field col s12">
     <a class="waves-effect waves-light btn" id=btnIngresar style="background-color: '#f85a40'">Registrarse</a>
