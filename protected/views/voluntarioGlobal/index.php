@@ -52,7 +52,7 @@
            <option value="" disabled selected>Seleccione una universidad</option>
          </select>
          <label>Universidad*</label>
-     </div>
+      </div>
       <div class="input-field col s12">
         <i class="material-icons prefix">vpn_key</i>
         <input id="txtPassword" type="password" class="validate">
@@ -86,7 +86,7 @@
             <option value="29">Otro</option>
          </select>
          <label>¿Cómo conoció AIESEC?*</label>
-     </div>
+      </div>
       <div class="input-field col s12">
         <i class="material-icons prefix">email</i>
           <select class="listas" id="lstPorque">
