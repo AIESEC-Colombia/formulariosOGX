@@ -39,7 +39,7 @@
       <div class="input-field col s12">
          <i class="material-icons prefix">phone</i>
          <input id="txtPhone" type="text" class="validate">
-         <label for="txtPhone">Tel閒ono*</label>
+         <label for="txtPhone">Tel茅fono*</label>
       </div>
       <div class="input-field col s12">
         <i class="material-icons prefix">email</i>
@@ -85,7 +85,7 @@
             <option value="25">Un amigo que ya tom贸 un intercambio</option>
             <option value="29">Otro</option>
          </select>
-         <label>*緾贸mo conoci贸 AIESEC?*</label>
+         <label>驴C贸mo conoci贸 AIESEC?*</label>
      </div>
       <div class="input-field col s12">
         <i class="material-icons prefix">email</i>
@@ -95,7 +95,7 @@
             <option value="2">Contribuir con las SDG's</option>
             <option value="3">Desarrollarme</option>
            </select>
-         <label>*縋or qu茅 te quieres ir de intercambio?*</label>
+         <label>驴Por qu茅 te quieres ir de intercambio?*</label>
         </div>
       <div class="input-field col s12">
         <i class="material-icons prefix">Cupon</i>
