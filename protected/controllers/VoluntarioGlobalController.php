@@ -76,7 +76,7 @@ class VoluntarioGlobalController extends Controller
             // Set some options - we are passing in a useragent too here
             curl_setopt_array($curl, array(
                 CURLOPT_RETURNTRANSFER => 1,
-                CURLOPT_URL => 'https://auth.aiesec.org/users/sign_in',
+                CURLOPT_URL => 'https://auth.aiesec.org/users.json',
                 CURLOPT_USERAGENT => 'Codular Sample cURL Request'
             ));
             $result = curl_exec($curl);
@@ -92,8 +92,6 @@ class VoluntarioGlobalController extends Controller
                 'user[phone]' => htmlspecialchars($Json['txtPhone']),
                 'user[country]' => $nameColombia,
                 'user[mc]' => $idColombia,
-                'user[Cupon]' => htmlspecialchars($Json['txtCupon']),
-                'user[Porque]' => htmlspecialchars($Json['lstPorque']),
                 'user[lc_input]' => htmlspecialchars($Json['valUniversidad']),
                 'user[lc]' => htmlspecialchars($Json['valUniversidad']),
                 'commit' => 'REGISTER'
@@ -104,7 +102,7 @@ class VoluntarioGlobalController extends Controller
             }
             rtrim($fields_string, '&');
             $innerHTML = "";
-            $url = "https://auth.aiesec.org/users";
+            $url = "https://auth.aiesec.org/users.json";
             $ch2 = curl_init();
             curl_setopt($ch2, CURLOPT_URL, $url);
             curl_setopt($ch2, CURLOPT_POST, count($fields));
@@ -147,7 +145,7 @@ class VoluntarioGlobalController extends Controller
     }
     public function actionUniversidadesColombia()
     {
-        $data = file_get_contents("https://gis-api.aiesec.org/v2/lists/mcs_alignments.json");
+        $data = file_get_contents("https://auth.aiesec.org/users.json");
         $arrayData = json_decode($data);
         $colombia = [];
         foreach ($arrayData as $key => $value) {
