@@ -24,7 +24,7 @@
         <h2 class="header" id="title" style="background-color: '#f85a40'">Voluntario Global</h2>
       </div>
       <div class="col s12 m12">
-       Gracias por visitiar nuestro programa de Voluntario Global, con este formulario se registrara en nuestra plataforma de oportunidades sin compromiso. Luego de completar su registro nos pondremos en contacto para asesorarlo en su b鷖queda y resoluci髇 de inquietudes.
+       Gracias por visitiar nuestro programa de Voluntario Global, con este formulario se registrara en nuestra plataforma de oportunidades sin compromiso. Luego de completar su registro nos pondremos en contacto para asesorarlo en su b煤squeda y resoluci贸n de inquietudes.
       </div>
       <div class="input-field col s12">
          <i class="material-icons prefix">account_circle</i>
@@ -85,7 +85,7 @@
             <option value="25">Un amigo que ya tom贸 un intercambio</option>
             <option value="29">Otro</option>
          </select>
-         <label>緾髆o conoci贸 AIESEC?*</label>
+         <label>*緾贸mo conoci贸 AIESEC?*</label>
      </div>
       <div class="input-field col s12">
         <i class="material-icons prefix">email</i>
@@ -95,7 +95,7 @@
             <option value="2">Contribuir con las SDG's</option>
             <option value="3">Desarrollarme</option>
            </select>
-         <label>縋or qu茅 te quieres ir de intercambio?*</label>
+         <label>*縋or qu茅 te quieres ir de intercambio?*</label>
         </div>
       <div class="input-field col s12">
         <i class="material-icons prefix">Cupon</i>
